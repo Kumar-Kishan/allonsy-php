@@ -13,6 +13,25 @@
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     <link href="{{ url('css/smt-bootstrap.css')}}" rel="stylesheet">
+
+
+    <style>
+         a {
+            background-color: transparent;
+            font-size: 30px;
+            padding: 15px;
+            color: white;
+        }
+
+
+        .navbar-brand
+        {
+            color: white;
+            font-size : 30px;
+        }    
+        
+        @yield('styles')
+    </style>
     <!-- Scripts -->
     <script>
         window.Laravel = {!! json_encode([
@@ -22,9 +41,12 @@
 </head>
 <body>
     <div id="app">
-        @include('layouts.nav')
-        @yield('content')
-    </div>
+        <div class="background-image"></div>   
+        <div class="content">
+            @include('layouts.nav')
+            @yield('content')
+        </div>
+    <div>
 
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}"></script>
