@@ -15,8 +15,9 @@
 Auth::routes();
 
 
-Route::get('/','HomeController@index')->middleware('auth');
 Route::get('/home', 'HomeController@index');
+
+Route::get('/','AppController@welcome');
 
 
 Route::get('/setPreferences', 'AppController@SetPreferences')->middleware('auth');

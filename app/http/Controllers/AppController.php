@@ -10,7 +10,7 @@ class AppController extends Controller
 
     public function welcome()
     {
-        return view('welcome');
+        return view('landingpage');
     }
 
     public function SetPreferences()
