@@ -5,10 +5,10 @@ namespace App;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\SoftDeletes;
 
-class Review extends Model
+class Post extends Model
 {
     use SoftDeletes;
      protected $fillable = [
-                 'text','rating','geo_address',
+                 'text','fistbump','story_id','media_id',
     ];
 }
