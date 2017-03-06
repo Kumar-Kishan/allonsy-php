@@ -1,5 +1,8 @@
-<nav class="navbar navbar-static-top">
-            <div class="container-fluid">
+<div class="navbar-wrapper">
+    <div class="container-fluid">
+
+        <nav class="navbar navbar-static-top">
+            <div class="container">
                 <div class="navbar-header">
 
                     <!-- Collapsed Hamburger -->
@@ -53,3 +56,5 @@
                 </div>
             </div>
         </nav>
+    </div>
+</div>

@@ -14,20 +14,22 @@
 
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     <link href="{{ url('css/smt-bootstrap.css')}}" rel="stylesheet">
-    <link href="{{ url('css/smt-bootstrap.css')}}" rel="stylesheet">
+
+
+    <link href="{{ url('css/carousel.css')}}" rel="stylesheet">
     
     <style>
-         .navbar{
-            background-color: black;
-            font:white;
+         .navbar {
+            background-color: transparent;
+            font-size: 30px;
+            padding: 15px;
         }
 
-        .carousel-inner>.item>img, .carousel-inner>.item>a>img {
-                display: block;
-                max-width: 100%;
-                height: auto;
-                line-height: 1;
-        }       
+
+        .navbar-brand
+        {
+            font-size : 30px;
+        }    
         
         @yield('styles')
 
@@ -42,10 +44,9 @@
 <body>
        
     @include('layouts.nav')
-        <div class="container-fluid">
+       
             @yield('content')
-        </div>
-
+       
     <!-- Scripts -->
      <script src="{{asset('js/app.js')}}"></script>
 </body>
