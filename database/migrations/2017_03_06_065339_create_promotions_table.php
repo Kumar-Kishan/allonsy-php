@@ -17,7 +17,7 @@ class CreatePromotionsTable extends Migration
             $table->increments('id');
             $table->integer('media_id')->unsigned();
             $table->foreign('media_id')->references('id')->on('media')->onDelete('cascade')->onUpdate('cascade');
-            $table->integer('company_id');
+            $table->integer('company_id')->unsigned();
             $table->foreign('company_id')->references('id')->on('companies')->onDelete('cascade')->onUpdate('cascade');
             $table->text('schemes');
             $table->timestamps();
