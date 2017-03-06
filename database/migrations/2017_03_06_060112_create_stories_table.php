@@ -16,6 +16,7 @@ class CreateStoriesTable extends Migration
         Schema::create('stories', function (Blueprint $table) {
             $table->increments('id');
             $table->enum('type',['review','posts']);
+            $table->timestamps();
         });
     }
 
