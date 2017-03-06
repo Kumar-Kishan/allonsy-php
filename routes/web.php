@@ -11,13 +11,11 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
 
-Route::get('/welcome','AppController@welcome');
 Auth::routes();
 
+
+Route::get('/','HomeController@index')->middleware('auth');
 Route::get('/home', 'HomeController@index');
 
 

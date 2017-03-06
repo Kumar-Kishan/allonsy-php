@@ -12,4 +12,9 @@ class AppController extends Controller
     {
         return view('welcome');
     }
+
+    public function SetPreferences()
+    {
+        return view('preferences');
+    }
 }
