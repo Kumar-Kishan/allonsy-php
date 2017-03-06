@@ -1,4 +1,4 @@
-@extends('layouts.auth')
+@extends('layouts.app')
 
 
 
@@ -78,4 +78,32 @@
 </div>
 @endsection
 @section('styles')
+    @section('styles')
+.background-image{
+    background-image: url('images/scenery (1).jpg');
+    background-size: cover;
+    display: block;
+    filter: blur(5px);
+    -webkit-filter: blur(5px);
+    height: 800px;
+    left: 0;
+    position: fixed;
+    right: 0;
+    z-index: 1;
+}
+.content{
+    
+    border-radius: 5px;
+    top: 10px;
+    left: 0;
+    position: fixed;
+    margin-left: 20px;
+    margin-right: 20px;
+    right: 0;
+    z-index: 2;
+    padding: 0 10px;
+}
+
+@endsection
+
 @endsection
