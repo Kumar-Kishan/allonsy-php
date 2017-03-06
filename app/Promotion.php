@@ -5,10 +5,12 @@ namespace App;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\SoftDeletes;
 
-class Company extends Model
+
+class Promotion extends Model
 {
-     use SoftDeletes;
+    use SoftDeletes;
      protected $fillable = [
-        'user_id', 'location_id','email','contact_no','about','website',
+        'company_id', 'schemes','media_id',
     ];
+
 }
