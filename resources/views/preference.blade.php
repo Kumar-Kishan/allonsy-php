@@ -1,3 +1,4 @@
+@extends('layouts.app')
 @section('navbar_content')
 <li><form class="navbar-form" action="{{ url('/bloodrequests/search')}}" method="POST">
     <div class="input-group">
