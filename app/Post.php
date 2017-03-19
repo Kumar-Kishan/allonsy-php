@@ -11,4 +11,10 @@ class Post extends Model
      protected $fillable = [
                  'text','fistbump','story_id','media_id',
     ];
+
+
+    public function media()
+    {
+        return $this->hasOne('App\Media');
+    }
 }
