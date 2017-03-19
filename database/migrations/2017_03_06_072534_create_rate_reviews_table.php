@@ -16,8 +16,12 @@ class CreateRateReviewsTable extends Migration
         Schema::create('rate_reviews', function (Blueprint $table) {
             $table->increments('id');
             $table->timestamps();
-            $table->integer('story_id')->unsigned();
+            $table->integer('story_id')->unsigned()->index();
             $table->foreign('story_id')->references('id')->on('stories')->onDelete('cascade')->onUpdate('cascade');
+            
+            $table->integer('user_id')->unsigned();
+            $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade')->onUpdate('cascade');
+          
             $table->string('text', 50);
             $table->enum('rating',['0','1','2','3','4','5']);
 
