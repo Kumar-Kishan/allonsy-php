@@ -9,7 +9,7 @@ use Illuminate\Database\Eloquent\SoftDeletes;
 class Promotion extends Model
 {
     use SoftDeletes;
-     protected $fillable = [
+    protected $fillable = [
         'company_id', 'schemes','media_id',
     ];
 

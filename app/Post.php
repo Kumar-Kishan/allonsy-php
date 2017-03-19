@@ -8,7 +8,7 @@ use Illuminate\Database\Eloquent\SoftDeletes;
 class Post extends Model
 {
     use SoftDeletes;
-     protected $fillable = [
+    protected $fillable = [
         'text','fistbump','story_id','media_id',
     ];
 
