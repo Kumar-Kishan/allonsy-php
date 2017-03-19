@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "8bed69e264cad343e90b0454e102f9ff",
+    "content-hash": "96098e473b028cdb2529580554a1ae3e",
     "packages": [
         {
             "name": "dnoegel/php-xdg-base-dir",
@@ -3226,56 +3226,6 @@
             "description": "Library that helps with managing the version number of Git-hosted PHP projects",
             "homepage": "https://github.com/sebastianbergmann/version",
             "time": "2016-10-03T07:35:21+00:00"
-        },
-        {
-            "name": "stolz/laravel-schema-spy",
-            "version": "0.1.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/Stolz/laravel-schema-spy.git",
-                "reference": "79eb7382874a5f6ae72231bdd4e10651dbdedbdf"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/Stolz/laravel-schema-spy/zipball/79eb7382874a5f6ae72231bdd4e10651dbdedbdf",
-                "reference": "79eb7382874a5f6ae72231bdd4e10651dbdedbdf",
-                "shasum": ""
-            },
-            "require": {
-                "illuminate/support": "~5.0",
-                "php": ">=5.4.0"
-            },
-            "require-dev": {
-                "squizlabs/php_codesniffer": "2.*"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "Stolz\\SchemaSpy\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Stolz",
-                    "homepage": "https://github.com/Stolz/laravel-schema-spy",
-                    "role": "developer"
-                }
-            ],
-            "description": "Laravel artisan command that uses JAVA schemaSpy tool to generate a graphical representation of a database schema",
-            "keywords": [
-                "database",
-                "er diagram",
-                "laravel",
-                "schema",
-                "schema-spy",
-                "schemaspy",
-                "sql"
-            ],
-            "time": "2015-02-05T15:22:31+00:00"
         },
         {
             "name": "symfony/yaml",
