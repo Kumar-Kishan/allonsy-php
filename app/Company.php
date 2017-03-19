@@ -11,4 +11,12 @@ class Company extends Model
      protected $fillable = [
         'user_id', 'location_id','email','contact_no','about','website',
     ];
+    public function promotions()
+    {
+        return $this->hasMany('App\Promotion');
+    }
+    public function location()
+    {
+        return $this->hasOne('App\Location');
+    }
 }
