@@ -15,6 +15,6 @@ class AppController extends Controller
 
     public function SetPreferences()
     {
-        return view('preferences');
+        return view('preference');
     }
 }
