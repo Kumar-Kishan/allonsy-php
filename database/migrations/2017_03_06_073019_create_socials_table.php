@@ -20,6 +20,7 @@ class CreateSocialsTable extends Migration
             $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade')->onUpdate('cascade');
             $table->string('fb_token',50);
             $table->string('insta_token',50);
+            $table->softDeletes();
 
         });
     }

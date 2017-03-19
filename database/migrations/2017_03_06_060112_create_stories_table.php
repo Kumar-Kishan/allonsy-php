@@ -18,7 +18,7 @@ class CreateStoriesTable extends Migration
             $table->enum('type',['review','posts']);
             $table->integer('user_id')->unsigned()->index();
             $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade')->onUpdate('cascade');
-          
+            $table->softDeletes();
             $table->timestamps();
         });
     }

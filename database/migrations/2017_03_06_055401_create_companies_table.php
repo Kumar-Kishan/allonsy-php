@@ -24,6 +24,7 @@ class CreateCompaniesTable extends Migration
             $table->string('contact_no');
             $table->text('about');
             $table->string('website')->nullable();
+            $table->softDeletes();
             $table->timestamps();
         });
     }

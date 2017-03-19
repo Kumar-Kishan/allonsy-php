@@ -21,7 +21,8 @@ class CreateReviewsTable extends Migration
             $table->foreign('media_id')->references('id')->on('media')->onDelete('cascade')->onUpdate('cascade');            
             $table->integer('location_id')->unsigned();
             $table->foreign('location_id')->references('id')->on('locations')->onDelete('cascade')->onUpdate('cascade');
-            $table->string('text', 50);            
+            $table->string('text', 200);           
+            $table->softDeletes(); 
             $table->enum('rating',['0','1','2','3','4','5']);
         });
     }

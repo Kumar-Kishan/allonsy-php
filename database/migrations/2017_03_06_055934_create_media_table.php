@@ -17,6 +17,7 @@ class CreateMediaTable extends Migration
             $table->increments('id');
             $table->enum('type',['image','video']);
             $table->string('path');
+            $table->softDeletes();
             $table->timestamps();
         });
     }

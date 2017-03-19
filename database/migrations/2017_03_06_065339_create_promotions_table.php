@@ -20,6 +20,7 @@ class CreatePromotionsTable extends Migration
             $table->integer('company_id')->unsigned();
             $table->foreign('company_id')->references('id')->on('companies')->onDelete('cascade')->onUpdate('cascade');
             $table->text('schemes');
+            $table->softDeletes();
             $table->timestamps();
         });
     }
