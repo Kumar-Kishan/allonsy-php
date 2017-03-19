@@ -35,6 +35,7 @@ $factory->define(App\Media::class, function (Faker\Generator $faker) {
     
     return [
         'type' => $faker->numberBetween(0,1),
+        'path' => 'abc.jpg',
     ];
 });
 
@@ -44,8 +45,8 @@ $factory->define(App\Company::class, function (Faker\Generator $faker) {
         'name' => $faker->name,
         'email' => $faker->unique()->companyEmail,
         'contact_no' => $faker->phoneNumber,
-        'user_id' => $faker->numberBetween(0,1000),
-        'location_id' => $faker->numberBetween(0,1000),
+        'user_id' => $faker->numberBetween(1,100),
+        'location_id' => $faker->numberBetween(1,1000),
         'about' => $faker->realText($maxNbChars = 200, $indexSize = 2),
         'website' => $faker->url,
     ];
@@ -53,75 +54,53 @@ $factory->define(App\Company::class, function (Faker\Generator $faker) {
 
 
 
-$factory->define(App\Story::class, function (Faker\Generator $faker) {
-    static $password;
+// $factory->define(App\Story::class, function (Faker\Generator $faker) {
+//     static $password;
 
-    return [
-        'type' => $faker->numberBetween(0,1),
-        'user_id' => $faker->numberBetween(0,1000),
-    ];
-});
+//     return [
+//         'type' => $faker->numberBetween(0,1),
+//         'user_id' => $faker->numberBetween(0,99),
+//     ];
+// });
 
-$factory->define(App\Review::class, function (Faker\Generator $faker) {
-    static $password;
+// $factory->define(App\Review::class, function (Faker\Generator $faker) {
+//     static $password;
 
-    return [
-        'story_id' => $faker->numberBetween(0,1000),
-        'media_id' => $faker->numberBetween(0,1000),
-        'location_id' => $faker->numberBetween(0,1000),
-        'text' => $faker->realText($maxNbChars = 200, $indexSize = 2),
-        'rating' =>$faker->numberBetween(0,5),
-    ];
-});
+//     return [
+//         'story_id' => $faker->numberBetween(0,1000),
+//         'media_id' => $faker->numberBetween(0,1000),
+//         'location_id' => $faker->numberBetween(0,1000),
+//         'text' => $faker->realText($maxNbChars = 200, $indexSize = 2),
+//         'rating' =>$faker->numberBetween(0,5),
+//     ];
+// });
 
 $factory->define(App\Promotion::class, function (Faker\Generator $faker) {
     return [
         'media_id' => $faker->numberBetween(0,1000),
-        'company_id' => $faker->numberBetween(0,1000),
+        'company_id' => $faker->numberBetween(1,100),
         'schemes' => $faker->realText($maxNbChars = 200, $indexSize = 2),
     ];
 });
 
-$factory->define(App\Post::class, function (Faker\Generator $faker) {
-    static $password;
+// $factory->define(App\Post::class, function (Faker\Generator $faker) {
+//     static $password;
 
-    return [
-        'story_id' => $faker->numberBetween(0,1000),
-        'media_id' => $faker->numberBetween(0,1000),
-        'text' => $faker->realText($maxNbChars = 200, $indexSize = 2),
-        'fistbump' => $faker->numberBetween(0,1000),
-    ];
-});
+//     return [
+//         'story_id' => $faker->numberBetween(0,1000),
+//         'media_id' => $faker->numberBetween(0,1000),
+//         'text' => $faker->realText($maxNbChars = 200, $indexSize = 2),
+//         'fistbump' => $faker->numberBetween(0,1000),
+//     ];
+// });
 
-$factory->define(App\RateReview::class, function (Faker\Generator $faker) {
-    static $password;
+// $factory->define(App\RateReview::class, function (Faker\Generator $faker) {
+//     static $password;
 
-    return [
-        'story_id' => $faker->numberBetween(0,1000),
-        'user_id' => $faker->numberBetween(0,1000),
-        'text' => $faker->realText($maxNbChars = 200, $indexSize = 2),
-        'rating' => $faker->numberBetween(0,5),
-    ];
-});
-
-$factory->define(App\RateReview::class, function (Faker\Generator $faker) {
-    static $password;
-
-    return [
-        'story_id' => $faker->numberBetween(0,1000),
-        'user_id' => $faker->numberBetween(0,1000),
-        'text' => $faker->realText($maxNbChars = 200, $indexSize = 2),
-        'rating' => $faker->numberBetween(0,5),
-    ];
-});
-
-$factory->define(App\RateReview::class, function (Faker\Generator $faker) {
-    static $password;
-
-    return [
-        'story_id' => $faker->numberBetween(0,1000),
-        'user_id' => $faker->numberBetween(0,1000),
-        'text' => $faker->realText($maxNbChars = 200, $indexSize = 2),
-        'rating' => $faker->numberBetween(0,5),
-    ];
-});
+//     return [
+//         'story_id' => $faker->numberBetween(0,1000),
+//         'user_id' => $faker->numberBetween(0,1000),
+//         'text' => $faker->realText($maxNbChars = 200, $indexSize = 2),
+//         'rating' => $faker->numberBetween(0,5),
+//     ];
+// });
