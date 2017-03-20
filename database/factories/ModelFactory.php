@@ -31,13 +31,6 @@ $factory->define(App\Location::class, function (Faker\Generator $faker) {
     ];
 });
 
-$factory->define(App\Media::class, function (Faker\Generator $faker) {
-    
-    return [
-        'type' => $faker->numberBetween(0,1),
-        'path' => 'abc.jpg',
-    ];
-});
 
 $factory->define(App\Company::class, function (Faker\Generator $faker) {
     
@@ -46,61 +39,35 @@ $factory->define(App\Company::class, function (Faker\Generator $faker) {
         'email' => $faker->unique()->companyEmail,
         'contact_no' => $faker->phoneNumber,
         'user_id' => $faker->numberBetween(1,100),
-        'location_id' => $faker->numberBetween(1,1000),
+        'location_id' => $faker->numberBetween(1,100),
         'about' => $faker->realText($maxNbChars = 200, $indexSize = 2),
         'website' => $faker->url,
     ];
 });
 
 
+$factory->define(App\Post::class,function (Faker\Generator $faker){
 
-// $factory->define(App\Story::class, function (Faker\Generator $faker) {
-//     static $password;
-
-//     return [
-//         'type' => $faker->numberBetween(0,1),
-//         'user_id' => $faker->numberBetween(0,99),
-//     ];
-// });
-
-// $factory->define(App\Review::class, function (Faker\Generator $faker) {
-//     static $password;
-
-//     return [
-//         'story_id' => $faker->numberBetween(0,1000),
-//         'media_id' => $faker->numberBetween(0,1000),
-//         'location_id' => $faker->numberBetween(0,1000),
-//         'text' => $faker->realText($maxNbChars = 200, $indexSize = 2),
-//         'rating' =>$faker->numberBetween(0,5),
-//     ];
-// });
-
-$factory->define(App\Promotion::class, function (Faker\Generator $faker) {
+    $story = factory(App\Story::class)->make(['type' => 'posts']);
+    $story->save();
     return [
-        'media_id' => $faker->numberBetween(0,1000),
-        'company_id' => $faker->numberBetween(1,100),
-        'schemes' => $faker->realText($maxNbChars = 200, $indexSize = 2),
+        'text' => $faker->realText(200,2),
+        'media_id' => factory(App\Media::class)->create()->id,
+        'story_id' => $story->id,
+        'fistbump' => 0,  
+    ];
+});
+$factory->define(App\Media::class,function (Faker\Generator $faker){
+
+    return [
+        'type' => 'image',
+        'path' => 'background.jpg',  
     ];
 });
 
-// $factory->define(App\Post::class, function (Faker\Generator $faker) {
-//     static $password;
-
-//     return [
-//         'story_id' => $faker->numberBetween(0,1000),
-//         'media_id' => $faker->numberBetween(0,1000),
-//         'text' => $faker->realText($maxNbChars = 200, $indexSize = 2),
-//         'fistbump' => $faker->numberBetween(0,1000),
-//     ];
-// });
-
-// $factory->define(App\RateReview::class, function (Faker\Generator $faker) {
-//     static $password;
-
-//     return [
-//         'story_id' => $faker->numberBetween(0,1000),
-//         'user_id' => $faker->numberBetween(0,1000),
-//         'text' => $faker->realText($maxNbChars = 200, $indexSize = 2),
-//         'rating' => $faker->numberBetween(0,5),
-//     ];
-// });
+$factory->define(App\Story::class,function (Faker\Generator $faker){
+    
+    return [
+        'user_id' => $faker->numberBetween(1,100),
+    ];
+});
