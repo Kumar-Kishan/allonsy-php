@@ -24,6 +24,7 @@ class CreateReviewsTable extends Migration
             $table->string('text', 200);           
             $table->softDeletes(); 
             $table->enum('rating',['0','1','2','3','4','5']);
+            $table->timestamps();
         });
     }
 

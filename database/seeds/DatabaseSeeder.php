@@ -13,17 +13,42 @@ class DatabaseSeeder extends Seeder
     public function run()
     {
         // $this->call(UsersTableSeeder::class);
-        factory(App\User::class,100)->create();
-        factory(App\Location::class,100)->create();
-        factory(App\Company::class,100)->create();
-        factory(App\Post::class,100)->create();
+       
+
         
-        //factory(App\Promotion::class,1000)->create();
-        // factory(App\Media::class,100)->create();
-        // factory(App\Story::class,100)->create();
-        // factory(App\Review::class,100)->create();
-        // factory(App\Promotion::class,100)->create();
-        // factory(App\RateReview::class,100)->create();
+        for ($i=1; $i < 101; $i++) { 
+            factory(App\User::class)->create();
+            if($i%10 == 0) {
+                echo $i.' users created'."\n";
+            }
+        }
+
+        for ($i=1; $i < 101; $i++) { 
+            factory(App\Location::class)->create();
+            if($i%10 == 0) {
+                echo $i.'  locations'."\n";
+            }
+        }
+        for ($i=1; $i < 101; $i++) { 
+            factory(App\Company::class)->create();
+            if($i%10 == 0) {
+                echo $i.'  companies'."\n";
+            }
+        }
+        for ($i=1; $i < 101; $i++) { 
+            factory(App\Post::class)->create();
+            if($i%10 == 0) {
+                echo $i.' posts created'."\n";
+            }
+        }
+        for ($i=1; $i < 101; $i++) { 
+            factory(App\Review::class)->create();
+            if($i%10 == 0) {
+                echo $i.' reviews created'."\n";
+            }
+        }
+        
+        
     
         
     }

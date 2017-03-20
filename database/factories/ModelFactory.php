@@ -57,16 +57,32 @@ $factory->define(App\Post::class,function (Faker\Generator $faker){
         'fistbump' => 0,  
     ];
 });
-$factory->define(App\Media::class,function (Faker\Generator $faker){
+$factory->define(App\Review::class,function (Faker\Generator $faker){
+
+    $story = factory(App\Story::class)->make(['type' => 'review']);
+    $story->save();
+
+    $ratings = array('0','1','2','3','4','5');
 
     return [
+        'text' => $faker->realText(200,2),
+        'media_id' => factory(App\Media::class)->create()->id,
+        'story_id' => $story->id,
+        'location_id'=> factory(App\Location::class)->create()->id,
+        'rating' => $ratings[rand()%6],
+    ];
+});
+$factory->define(App\Media::class,function (Faker\Generator $faker){
+
+
+    $paths = array('background.jpg', 'scenery (1).jpg','scenery (2).jpg','scenery (3).jpg', 'scenery (4).jpg', 'scenery (5).jpg');
+    return [
         'type' => 'image',
-        'path' => 'background.jpg',  
+        'path' => $paths[rand()%6],  
     ];
 });
 
 $factory->define(App\Story::class,function (Faker\Generator $faker){
-    
     return [
         'user_id' => $faker->numberBetween(1,100),
     ];
