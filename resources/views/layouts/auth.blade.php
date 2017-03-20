@@ -20,16 +20,36 @@
     
     <style>
          .navbar {
-            background-color: transparent;
+            /*background-color: transparent;*/
             font-size: 30px;
-            padding: 15px;
+            
         }
 
+        .navbar-wrapper .navbar {
+            padding-right: 0px;
+            padding-left: 0px;
+        }
 
+         
         .navbar-brand
         {
             font-size : 30px;
         }    
+
+         .navbar {
+      margin-bottom: 0px;
+        }
+
+    .affix {
+            top:0;
+            width: 100%;
+            z-index: 9999 !important;
+        }
+
+  .affix ~ .container-fluid {
+     position: relative;
+     top: 50px;
+  }
         
         @yield('styles')
 
@@ -41,12 +61,11 @@
         ]) !!};
     </script>
 </head>
-<body>
-       
-    @include('layouts.nav')
-       
-            @yield('content')
-       
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
+                
+    @include('landinglayout.landingnav')
+    @yield('content')
+
     <!-- Scripts -->
      <script src="{{asset('js/app.js')}}"></script>
 </body>
