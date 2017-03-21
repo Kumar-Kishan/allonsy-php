@@ -1,7 +1,7 @@
 <div class="navbar-wrapper">
     <div class="container-fluid">
 
-<nav class="navbar navbar-static-top">
+<nav class="navbar navbar-inverse-static-top">
             <div class="container">
                 <div class="navbar-header">
 
