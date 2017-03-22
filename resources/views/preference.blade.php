@@ -330,7 +330,7 @@ input::-moz-focus-outer {
  @endsection
 
 @section('scripts')
- 
+ <script>
  
  $(document).ready(function(){
     
@@ -355,7 +355,7 @@ var rangeSlider = function(){
     });
   });
 };
-
+</script>
 @endsection
 
 
