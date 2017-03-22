@@ -124,8 +124,8 @@ input::-moz-focus-outer {
     
     <div class="panel panel-primary">
         <div class="panel-heading"><div class="text-center">SET YOUR PREFERENCES!!</div></div>
-        <div class="panel-body"><div class="text-center">
-
+        <div class="panel-body">
+        
         <div class="row">
 
         @for ($i = 1; $i < 4; $i++)
@@ -135,7 +135,7 @@ input::-moz-focus-outer {
                     <div class="panel-body">
 
                           <div class="reveal-dim">
-                            <img class="reveal-show" src="{{url('images/pref('.$i.').jpg')}}">
+                            <img class="reveal-show" src="{{url('images/pref'.$i.'.jpg')}}">
                             <div class="reveal-hide reveal-content">
                                 <div class="reveal-center">
                                     <span>
@@ -162,11 +162,11 @@ input::-moz-focus-outer {
         @for ($i = 4; $i < 7; $i++)
             <div class="col-sm-4 cards">
                 <div class="panel panel-info">
-                    <div class="panel-heading"><div class="text-center">{{$pref2[$i - 1]}}</div></div>
+                    <div class="panel-heading"><div class="text-center">{{$pref2[$i-4]}}</div></div>
                     <div class="panel-body">
 
                           <div class="reveal-dim">
-                            <img class="reveal-show" src="{{url('images/pref('.$i.').jpg')}}">
+                            <img class="reveal-show" src="{{url('images/pref'.$i.'.jpg')}}">
                             <div class="reveal-hide reveal-content">
                                 <div class="reveal-center">
                                     <span>
@@ -188,12 +188,11 @@ input::-moz-focus-outer {
         @endfor
     </div>
 
-       </div> 
+       
        </div>
        </div>
     </div>
      
- </div>
 
  @endsection
 
