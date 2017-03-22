@@ -169,7 +169,7 @@ input::-moz-focus-outer {
             <div class="col-sm-4 cards">
 
                 <div class="panel panel-info">
-                    <div class="panel-heading">headinig</div>
+                    <div class="panel-heading"><div class="text-center">Heading</div></div>
                     <div class="panel-body">
 
                           <div class="reveal-dim">
