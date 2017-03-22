@@ -1,17 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Preference Page</title>
-
-    <link href="{{ asset('css/app.css') }}" rel="stylesheet">
-    <link href="{{ url('css/smt-bootstrap.css')}}" rel="stylesheet">
-
+@extends('layouts.app')
 
     
-    <style>
+@section('styles')
     .background-image{
     background-image: url('images/scenery (2).jpg');
     background-size: cover;
@@ -143,11 +133,34 @@ input::-moz-focus-outer {
     margin-top: 20px;
 }
 
+.background-image{
+    background-image: url('images/scenery (2).jpg');
+    background-size: cover;
+    display: block;
+    filter: blur(5px);
+    -webkit-filter: blur(5px);
+    height: 1200px;
+    left: 0;
+    position: fixed;
+    right: 0;
+    z-index: 1;
+}
+.panel-group{
+    
+    border-radius: 5px;
+    top: 10px;
+    left: 0;
+    position: fixed;
+    margin-left: 20px;
+    margin-right: 20px;
+    right: 0;
+    z-index: 2;
+    padding: 0 10px;
+}
 
+@endsection
 
-</style>
-</head>
-<body>
+@section('content')
  <div class="container-fluid"> 
     
     <div class="panel-group">
@@ -316,8 +329,11 @@ input::-moz-focus-outer {
 
  </div>
 
- <script src="{{ url('js/app.js') }}">  </script>
- <script>
+ @endsection
+
+@section('scripts')
+ 
+ 
  $(document).ready(function(){
     
 rangeSlider();
@@ -342,12 +358,6 @@ var rangeSlider = function(){
   });
 };
 
-</script>
-</body>
-
-
-
-</html>
-
+@endsection
 
 

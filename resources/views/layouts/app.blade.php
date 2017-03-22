@@ -51,7 +51,7 @@
     <div id="app">
         <div class="background-image"></div>   
         <div class="content">
-            @include('layouts.nav')
+           @include('layouts.nav')
             @yield('content')
         </div>
     <div>
