@@ -140,8 +140,10 @@ input::-moz-focus-outer {
 }
 
 .cards{
-    margin-top: 30px;
+    margin-top: 20px;
 }
+
+
 
 </style>
 </head>
@@ -150,10 +152,11 @@ input::-moz-focus-outer {
     
     <div class="panel-group">
         <div class="row">
+
             <div class="col-sm-4 cards">
 
                 <div class="panel panel-info">
-                    <div class="panel-heading">Heading</div>
+                    <div class="panel-heading">headinig</div>
                     <div class="panel-body">
 
                           <div class="reveal-dim">
@@ -174,6 +177,7 @@ input::-moz-focus-outer {
                 </div>
    
              </div>
+
 
             <div class="col-sm-4 cards">
 
