@@ -134,22 +134,10 @@ input::-moz-focus-outer {
 }
 
 .cards{
-    margin-top: 20px;
+    margin-top: 10px;
 }
 
-.background-image{
-    background-image: url('images/scenery (2).jpg');
-    background-size: cover;
-    display: block;
-    filter: blur(5px);
-    -webkit-filter: blur(5px);
-    height: 1200px;
-    left: 0;
-    position: fixed;
-    right: 0;
-    z-index: 1;
-}
-.
+
 
 
 @endsection
@@ -157,7 +145,7 @@ input::-moz-focus-outer {
 @section('content')
  <div class="container"> 
     
-    <div class="panel panel-info">
+    <div class="panel panel-primary">
         <div class="panel-heading"><div class="text-center">SET YOUR PREFERENCES!!</div></div>
         <div class="panel-body">
 

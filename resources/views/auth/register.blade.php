@@ -79,6 +79,10 @@
 @endsection
 @section('styles')
     @section('styles')
+.navbar{
+        visibility:hidden;
+    }
+
 .background-image{
     background-image: url('images/scenery (1).jpg');
     background-size: cover;
