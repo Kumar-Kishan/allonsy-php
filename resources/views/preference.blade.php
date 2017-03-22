@@ -6,30 +6,7 @@
         visibility:hidden;
     }
 
-    .background-image{
-    background-image: url('images/scenery (2).jpg');
-    background-size: cover;
-    display: block;
-    filter: blur(5px);
-    -webkit-filter: blur(5px);
-    height: 1200px;
-    left: 0;
-    position: fixed;
-    right: 0;
-    z-index: 1;
-}
-.content{
-
-    border-radius: 5px;
-    top: 10px;
-    left: 0;
-    position: fixed;
-    margin-left: 20px;
-    margin-right: 20px;
-    right: 0;
-    z-index: 2;
-    padding: 0 10px;
-}
+    
 
 .reveal-dim > .item > img {
   position: absolute;
@@ -151,14 +128,14 @@ input::-moz-focus-outer {
 
         <div class="row">
 
+        @for ($i = 1; $i < 4; $i++)
             <div class="col-sm-4 cards">
-
                 <div class="panel panel-info">
-                    <div class="panel-heading"><div class="text-center">Heading</div></div>
+                    <div class="panel-heading"><div class="text-center">{{$pref1[$i - 1]}}</div></div>
                     <div class="panel-body">
 
                           <div class="reveal-dim">
-                            <img class="reveal-show" src="{{ url('images/scenery (1).jpg') }}">
+                            <img class="reveal-show" src="{{url('images/pref('.$i.').jpg')}}">
                             <div class="reveal-hide reveal-content">
                                 <div class="reveal-center">
                                     <span>
@@ -174,72 +151,21 @@ input::-moz-focus-outer {
                     </div>
                 </div>
    
-             </div>
-
-
-            <div class="col-sm-4 cards">
-
-                <div class="panel panel-info">
-                    <div class="panel-heading"><div class="text-center">Heading</div></div>
-                    <div class="panel-body">
-
-                          <div class="reveal-dim">
-                            <img class="reveal-show" src="{{ url('images/scenery (2).jpg') }}">
-                            <div class="reveal-hide reveal-content">
-                                <div class="reveal-center">
-                                    <span>
-                                        <div class="range-slider">
-                                            <input class="range-slider__range" type="range" value="0" min="0" max="100">
-                                            <span class="range-slider__value">0</span>
-                                        </div>
-                                    </span>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
+             </div>       
    
-             </div>
-
-             <div class="col-sm-4 cards">
-
-                <div class="panel panel-info">
-                    <div class="panel-heading"><div class="text-center">Heading</div></div>
-                    <div class="panel-body">
-
-                          <div class="reveal-dim">
-                            <img class="reveal-show" src="{{ url('images/scenery (3).jpg') }}">
-                            <div class="reveal-hide reveal-content">
-                                <div class="reveal-center">
-                                    <span>
-                                        <div class="range-slider">
-                                            <input class="range-slider__range" type="range" value="0" min="0" max="100">
-                                            <span class="range-slider__value">0</span>
-                                        </div>
-                                    </span>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-
-                
-   
-             </div>
-
         </div>
+    </div>
 
-        <div class="row">
+    <div class="row">
+
+        @for ($i = 4; $i < 7; $i++)
             <div class="col-sm-4 cards">
-
                 <div class="panel panel-info">
-                    <div class="panel-heading"><div class="text-center">Heading</div></div>
+                    <div class="panel-heading"><div class="text-center">{{$pref2[$i - 1]}}</div></div>
                     <div class="panel-body">
 
                           <div class="reveal-dim">
-                            <img class="reveal-show" src="{{ url('images/scenery (1).jpg') }}">
+                            <img class="reveal-show" src="{{url('images/pref('.$i.').jpg')}}">
                             <div class="reveal-hide reveal-content">
                                 <div class="reveal-center">
                                     <span>
@@ -255,60 +181,12 @@ input::-moz-focus-outer {
                     </div>
                 </div>
    
-             </div>
-
-            <div class="col-sm-4 cards">
-
-                <div class="panel panel-info">
-                    <div class="panel-heading"><div class="text-center">Heading</div></div>
-                    <div class="panel-body">
-
-                          <div class="reveal-dim">
-                            <img class="reveal-show" src="{{ url('images/scenery (2).jpg') }}">
-                            <div class="reveal-hide reveal-content">
-                                <div class="reveal-center">
-                                    <span>
-                                        <div class="range-slider">
-                                            <input class="range-slider__range" type="range" value="0" min="0" max="100">
-                                            <span class="range-slider__value">0</span>
-                                        </div>
-                                    </span>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
+             </div>       
    
-             </div>
-
-             <div class="col-sm-4 cards">
-
-                <div class="panel panel-info">
-                    <div class="panel-heading"><div class="text-center">Heading</div></div>
-                    <div class="panel-body">
-
-                          <div class="reveal-dim">
-                            <img class="reveal-show" src="{{ url('images/scenery (3).jpg') }}">
-                            <div class="reveal-hide reveal-content">
-                                <div class="reveal-center">
-                                    <span>
-                                        <div class="range-slider">
-                                            <input class="range-slider__range" type="range" value="0" min="0" max="100">
-                                            <span class="range-slider__value">0</span>
-                                        </div>
-                                    </span>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-              
-   
-             </div>
-
         </div>
+    </div>
+
+        
        </div>
        </div>
     </div>

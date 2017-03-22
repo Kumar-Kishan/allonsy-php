@@ -17,6 +17,8 @@ class AppController extends Controller
 
     public function SetPreferences()
     {
-           return view('preference');
+        $pref1=array("Food", "Pilgrimage", "Thrill");
+        $pref2=array("Chill", "Trek", "Entertainment");
+           return view('preference',['pref1'=>$pref1],['pref2'=>$pref2]);
     }
 }
