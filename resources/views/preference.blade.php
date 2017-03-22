@@ -124,7 +124,7 @@ input::-moz-focus-outer {
     
     <div class="panel panel-primary">
         <div class="panel-heading"><div class="text-center">SET YOUR PREFERENCES!!</div></div>
-        <div class="panel-body">
+        <div class="panel-body"><div class="text-center">
 
         <div class="row">
 
@@ -154,6 +154,7 @@ input::-moz-focus-outer {
              </div>       
    
         </div>
+        @endfor
     </div>
 
     <div class="row">
@@ -184,9 +185,10 @@ input::-moz-focus-outer {
              </div>       
    
         </div>
+        @endfor
     </div>
 
-        
+       </div> 
        </div>
        </div>
     </div>
