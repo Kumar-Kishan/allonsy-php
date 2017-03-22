@@ -117,15 +117,18 @@ input::-moz-focus-outer {
 
 
 
+
+
 @endsection
 
 @section('content')
  <div class="container"> 
-    
-    <div class="panel panel-primary">
-        <div class="panel-heading"><div class="text-center">SET YOUR PREFERENCES!!</div></div>
-        <div class="panel-body">
-        
+
+    <div class="panel panel-info">
+    <div class="panel-heading"><div class="text-center">SET YOUR PREFERENCES!</div></div>
+    <div class="panel-body">
+
+       
         <div class="row">
 
         @for ($i = 1; $i < 4; $i++)
@@ -152,8 +155,7 @@ input::-moz-focus-outer {
                 </div>
    
              </div>       
-   
-        </div>
+
         @endfor
     </div>
 
@@ -184,15 +186,13 @@ input::-moz-focus-outer {
    
              </div>       
    
-        </div>
+
         @endfor
     </div>
 
-       
        </div>
-       </div>
-    </div>
-     
+    </div>   
+</div>
 
  @endsection
 
