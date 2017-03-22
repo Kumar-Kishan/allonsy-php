@@ -1,7 +1,18 @@
-@extends('layouts.app')
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Preference Page</title>
 
-@section('styles')
-.background-image{
+    <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    <link href="{{ url('css/smt-bootstrap.css')}}" rel="stylesheet">
+
+
+    
+    <style>
+    .background-image{
     background-image: url('images/scenery (2).jpg');
     background-size: cover;
     display: block;
@@ -128,97 +139,186 @@ input::-moz-focus-outer {
   border: 0;
 }
 
-@endsection
+.cards{
+    margin-top: 30px;
+}
 
-@section('content')
-<div class="row">
-    <div class="col-sm-4">
-            <div class="reveal-dim">
-                <img class="reveal-show" src="{{ url('images/scenery (1).jpg') }}">
-                <div class="reveal-hide reveal-content">
-                    <div class="reveal-center">
-                    <span>
-                        <div class="range-slider">
-                            <input class="range-slider__range" type="range" value="0" min="0" max="100">
-                            <span class="range-slider__value">0</span>
+</style>
+</head>
+<body>
+ <div class="container-fluid"> 
+    
+    <div class="panel-group">
+        <div class="row">
+            <div class="col-sm-4 cards">
+
+                <div class="panel panel-info">
+                    <div class="panel-heading">Heading</div>
+                    <div class="panel-body">
+
+                          <div class="reveal-dim">
+                            <img class="reveal-show" src="{{ url('images/scenery (1).jpg') }}">
+                            <div class="reveal-hide reveal-content">
+                                <div class="reveal-center">
+                                    <span>
+                                        <div class="range-slider">
+                                            <input class="range-slider__range" type="range" value="0" min="0" max="100">
+                                            <span class="range-slider__value">0</span>
+                                        </div>
+                                    </span>
+                                </div>
+                            </div>
                         </div>
-                    </span>
-                     </div>
-                </div>
-            </div>
-    </div>
 
-    <div class="col-sm-4">
-            <div class="reveal-dim">
-                <img class="reveal-show" src="{{ url('images/scenery (2).jpg') }}">
-                <div class="reveal-hide reveal-content">
-                    <div class="reveal-center">
-                        <span>
-                            <a class="btn btn-white-inverted-fill btn-warning">Add Friend</a>
-                        </span>
                     </div>
                 </div>
-            </div>
-    </div>
+   
+             </div>
 
-    <div class="col-sm-4">
-            <div class="reveal-dim">
-                <img class="reveal-show" src="{{ url('images/scenery (3).jpg') }}">
-                <div class="reveal-hide reveal-content">
-                    <div class="reveal-center">
-                        <span>
-                            <a class="btn btn-white-inverted-fill btn-warning">Add Friend</a>
-                        </span>
+            <div class="col-sm-4 cards">
+
+                <div class="panel panel-info">
+                    <div class="panel-heading">Heading</div>
+                    <div class="panel-body">
+
+                          <div class="reveal-dim">
+                            <img class="reveal-show" src="{{ url('images/scenery (2).jpg') }}">
+                            <div class="reveal-hide reveal-content">
+                                <div class="reveal-center">
+                                    <span>
+                                        <div class="range-slider">
+                                            <input class="range-slider__range" type="range" value="0" min="0" max="100">
+                                            <span class="range-slider__value">0</span>
+                                        </div>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
-            </div>
-    </div>
-</div>
+   
+             </div>
 
-<div class="row">
-    <div class="col-sm-4">
-            <div class="reveal-dim">
-                <img class="reveal-show" src="{{ url('images/scenery (4).jpg') }}">
-                <div class="reveal-hide reveal-content">
-                    <div class="reveal-center">
-                        <span>
-                            <a class="btn btn-white-inverted-fill btn-warning">Add Friend</a>
-                        </span>
+             <div class="col-sm-4 cards">
+
+                <div class="panel panel-info">
+                    <div class="panel-heading">Heading</div>
+                    <div class="panel-body">
+
+                          <div class="reveal-dim">
+                            <img class="reveal-show" src="{{ url('images/scenery (3).jpg') }}">
+                            <div class="reveal-hide reveal-content">
+                                <div class="reveal-center">
+                                    <span>
+                                        <div class="range-slider">
+                                            <input class="range-slider__range" type="range" value="0" min="0" max="100">
+                                            <span class="range-slider__value">0</span>
+                                        </div>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
-            </div>
-    </div>
 
-    <div class="col-sm-4">
-            <div class="reveal-dim">
-                <img class="reveal-show" src="{{ url('images/scenery (5).jpg') }}">
-                <div class="reveal-hide reveal-content">
-                    <div class="reveal-center">
-                        <span>
-                            <a class="btn btn-white-inverted-fill btn-warning">Add Friend</a>
-                        </span>
+                
+   
+             </div>
+
+        </div>
+
+        <div class="row">
+            <div class="col-sm-4 cards">
+
+                <div class="panel panel-info">
+                    <div class="panel-heading">Heading</div>
+                    <div class="panel-body">
+
+                          <div class="reveal-dim">
+                            <img class="reveal-show" src="{{ url('images/scenery (1).jpg') }}">
+                            <div class="reveal-hide reveal-content">
+                                <div class="reveal-center">
+                                    <span>
+                                        <div class="range-slider">
+                                            <input class="range-slider__range" type="range" value="0" min="0" max="100">
+                                            <span class="range-slider__value">0</span>
+                                        </div>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
-            </div>
-    </div>
+   
+             </div>
 
-    <div class="col-sm-4">
-            <div class="reveal-dim">
-                <img class="reveal-show" src="{{ url('images/background.png') }}">
-                <div class="reveal-hide reveal-content">
-                    <div class="reveal-center">
-                        <span>
-                            <a class="btn btn-white-inverted-fill btn-warning">Add Friend</a>
-                        </span>
+            <div class="col-sm-4 cards">
+
+                <div class="panel panel-info">
+                    <div class="panel-heading">Heading</div>
+                    <div class="panel-body">
+
+                          <div class="reveal-dim">
+                            <img class="reveal-show" src="{{ url('images/scenery (2).jpg') }}">
+                            <div class="reveal-hide reveal-content">
+                                <div class="reveal-center">
+                                    <span>
+                                        <div class="range-slider">
+                                            <input class="range-slider__range" type="range" value="0" min="0" max="100">
+                                            <span class="range-slider__value">0</span>
+                                        </div>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
-            </div>
-    </div>
-</div>
-@endsection
+   
+             </div>
 
-@section('scripts')
-<script>
+             <div class="col-sm-4 cards">
+
+                <div class="panel panel-info">
+                    <div class="panel-heading">Heading</div>
+                    <div class="panel-body">
+
+                          <div class="reveal-dim">
+                            <img class="reveal-show" src="{{ url('images/scenery (3).jpg') }}">
+                            <div class="reveal-hide reveal-content">
+                                <div class="reveal-center">
+                                    <span>
+                                        <div class="range-slider">
+                                            <input class="range-slider__range" type="range" value="0" min="0" max="100">
+                                            <span class="range-slider__value">0</span>
+                                        </div>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+              
+   
+             </div>
+
+        </div>
+
+    </div>
+
+ </div>
+
+ <script src="{{ url('js/app.js') }}">  </script>
+ <script>
+ $(document).ready(function(){
+    
+rangeSlider();
+
+ });
 var rangeSlider = function(){
   var slider = $('.range-slider'),
       range = $('.range-slider__range'),
@@ -238,8 +338,12 @@ var rangeSlider = function(){
   });
 };
 
-rangeSlider();
-
 </script>
+</body>
 
-@endsection
+
+
+</html>
+
+
+
