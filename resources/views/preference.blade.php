@@ -2,6 +2,10 @@
 
     
 @section('styles')
+    .navbar{
+        visibility:hidden;
+    }
+
     .background-image{
     background-image: url('images/scenery (2).jpg');
     background-size: cover;
@@ -145,25 +149,18 @@ input::-moz-focus-outer {
     right: 0;
     z-index: 1;
 }
-.panel-group{
-    
-    border-radius: 5px;
-    top: 10px;
-    left: 0;
-    position: fixed;
-    margin-left: 20px;
-    margin-right: 20px;
-    right: 0;
-    z-index: 2;
-    padding: 0 10px;
-}
+.
+
 
 @endsection
 
 @section('content')
- <div class="container-fluid"> 
+ <div class="container"> 
     
-    <div class="panel-group">
+    <div class="panel panel-info">
+        <div class="panel-heading"><div class="text-center">SET YOUR PREFERENCES!!</div></div>
+        <div class="panel-body">
+
         <div class="row">
 
             <div class="col-sm-4 cards">
@@ -324,9 +321,10 @@ input::-moz-focus-outer {
              </div>
 
         </div>
-
+       </div>
+       </div>
     </div>
-
+     
  </div>
 
  @endsection
