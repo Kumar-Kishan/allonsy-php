@@ -20,15 +20,14 @@
             </div>
           </div>
         </div>
-   
         @for ($i = 2; $i < 6; $i++)
     
         <div class="item">
           <img class="third-slide" src="{{url('images/scenery ('.$i.').jpg')}}">
           <div class="container">
             <div class="carousel-caption">
-              <h1>One more for good measure.</h1>
-              <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+              <h1>{{$quote[$i - 2]}}</h1>
+              <p>{{$quoter[$i-2]}}</p>
               
             </div>
           </div>
