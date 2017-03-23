@@ -6,23 +6,13 @@
         visibility:hidden;
     }
 
-    
-
-.reveal-dim > .item > img {
+  .reveal-dim > .item > img {
   position: absolute;
   top: 0;
   left: 0;
   min-width: 100%;
   height: 50px;
 }
-
-.row
-{
-    margin-top: 30px;
-    margin-left: 30px;
-}
-
-
 
 .range-slider {
   margin: 60px 0 0 0%;
@@ -110,24 +100,49 @@ input::-moz-focus-outer {
   border: 0;
 }
 
-.cards{
+.cards {
     margin-top: 10px;
 }
+ .row {
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
 
-
-
-
-
+.background-image {
+    background-image: url('images/wallpapers (13).jpg');
+    background-size: cover;
+    display: block;
+    filter: blur(5px);
+    -webkit-filter: blur(5px);
+    height: 1200px;
+    left: 0;
+    position: fixed;
+    right: 0;
+    z-index: 1;
+}
+.content {
+    
+    border-radius: 5px;
+    top: 10px;
+    left: 0;
+    position: fixed;
+    margin-left: 20px;
+    margin-right: 20px;
+    right: 0;
+    z-index: 2;
+    padding: 10px;
+}
 
 @endsection
 
 @section('content')
  <div class="container"> 
-
+ 
     <div class="panel panel-info">
     <div class="panel-heading"><div class="text-center">SET YOUR PREFERENCES!</div></div>
     <div class="panel-body">
-
+         
        
         <div class="row">
 
@@ -189,6 +204,8 @@ input::-moz-focus-outer {
 
         @endfor
     </div>
+
+    
 
        </div>
     </div>   

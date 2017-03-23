@@ -36,7 +36,9 @@
         {
             color: white;
             font-size : 30px;
-        }    
+        }  
+        
+         
         
         @yield('styles')
     </style>
