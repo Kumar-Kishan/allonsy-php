@@ -110,7 +110,7 @@ input::-moz-focus-outer {
 }
 
 .background-image {
-    background-image: url('images/wallpapers (13).jpg');
+    background-image: url('images/prefback.jpg');
     background-size: cover;
     display: block;
     filter: blur(5px);
@@ -134,15 +134,22 @@ input::-moz-focus-outer {
     padding: 10px;
 }
 
+.page-header {
+    padding-bottom: 10px;
+    margin: 44px 0 22px;
+    border-bottom: 1px solid #eee;
+    font-size: 30;
+    color: black;
+}
+
 @endsection
 
 @section('content')
  <div class="container"> 
  
-    <div class="panel panel-info">
-    <div class="panel-heading"><div class="text-center">SET YOUR PREFERENCES!</div></div>
-    <div class="panel-body">
-         
+   <div class="container">
+  <div class="page-header"><div class="text-center"><h1><b>Set Your Preferences!!</b><h1></div></div>
+
        
         <div class="row">
 
@@ -209,7 +216,7 @@ input::-moz-focus-outer {
     
 
        </div>
-    </div>   
+    
 </div>
 
  @endsection
