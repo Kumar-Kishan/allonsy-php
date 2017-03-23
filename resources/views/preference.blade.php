@@ -205,6 +205,7 @@ input::-moz-focus-outer {
         @endfor
     </div>
 
+            <a href="#" class="btn btn-info">Good to Go!</a>
     
 
        </div>
