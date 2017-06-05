@@ -23,7 +23,7 @@ class CreateRateReviewsTable extends Migration
             $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade')->onUpdate('cascade');
             $table->softDeletes();
             $table->string('text', 200);
-            $table->enum('rating',['0','1','2','3','4','5']);
+            $table->enum('rating',['1','2','3','4','5']);
 
         });
     }
