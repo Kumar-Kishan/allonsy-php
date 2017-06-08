@@ -19,4 +19,10 @@ class AppController extends Controller
     {
          return view('preference.index');
     }
+
+    public function SavePreferences(Request $request)
+    {
+        //abort(400, 'Bad Request');
+        return $request->all();
+    }
 }

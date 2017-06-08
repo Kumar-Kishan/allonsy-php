@@ -1,22 +1,32 @@
 <template lang="html">
+
+<div class="well">
+
   <div class="cards">
     <div class="card-image">
         <div class="reveal-dim">
-            <span class="label label-danger label-ribbon-left">Great</span>
+          <span class="label label-danger label-ribbon-left">{{preference.name}}</span>
             <img class="reveal-show" :src=preference.image>
             <div class="reveal-hide reveal-content">
-                <div class="reveal-center">
-                <span>
-                    <div class="range-slider">
-                        <input class="range-slider__range" type="range" value="0" min="0" max="100">
-                        <span class="range-slider__value">0</span>
+                
+                <div class="reveal-content">
+                  <span class="label label-danger label-ribbon-left">{{preference.name}}</span>
+                    <div class="reveal-center">
+                        <span>
+                            <div class="range-slider">
+                                <input class="range-slider__range" :id=preference.name type="range" value="0" min="0" max="100">
+                                <span class="range-slider__value">0</span>
+                            </div>
+                        </span>
                     </div>
-                </span>
+                </div>
+                
             </div>
-        </div>
-      </div> 
+        </div> 
     </div>
   </div>
+
+</div>
 </template>
 <script>
     export default {

@@ -12192,6 +12192,16 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
     data: function data() {
@@ -31869,6 +31879,8 @@ module.exports = Component.exports
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('div', {
+    staticClass: "well"
+  }, [_c('div', {
     staticClass: "cards"
   }, [_c('div', {
     staticClass: "card-image"
@@ -31876,22 +31888,25 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     staticClass: "reveal-dim"
   }, [_c('span', {
     staticClass: "label label-danger label-ribbon-left"
-  }, [_vm._v("Great")]), _vm._v(" "), _c('img', {
+  }, [_vm._v(_vm._s(_vm.preference.name))]), _vm._v(" "), _c('img', {
     staticClass: "reveal-show",
     attrs: {
       "src": _vm.preference.image
     }
-  }), _vm._v(" "), _vm._m(0)])])])
-},staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', {
+  }), _vm._v(" "), _c('div', {
     staticClass: "reveal-hide reveal-content"
   }, [_c('div', {
+    staticClass: "reveal-content"
+  }, [_c('span', {
+    staticClass: "label label-danger label-ribbon-left"
+  }, [_vm._v(_vm._s(_vm.preference.name))]), _vm._v(" "), _c('div', {
     staticClass: "reveal-center"
   }, [_c('span', [_c('div', {
     staticClass: "range-slider"
   }, [_c('input', {
     staticClass: "range-slider__range",
     attrs: {
+      "id": _vm.preference.name,
       "type": "range",
       "value": "0",
       "min": "0",
@@ -31899,8 +31914,8 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     }
   }), _vm._v(" "), _c('span', {
     staticClass: "range-slider__value"
-  }, [_vm._v("0")])])])])])
-}]}
+  }, [_vm._v("0")])])])])])])])])])])
+},staticRenderFns: []}
 module.exports.render._withStripped = true
 if (false) {
   module.hot.accept()

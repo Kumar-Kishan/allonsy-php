@@ -19,5 +19,6 @@ Route::get('/home', 'HomeController@index');
 
 Route::get('/','AppController@welcome');
 
-
+Route::post('/preferences', 'AppController@SavePreferences')->middleware('auth');
 Route::get('/setPreferences', 'AppController@SetPreferences')->middleware('auth');
+
