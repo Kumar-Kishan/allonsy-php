@@ -2,15 +2,21 @@
 
 @section('styles')
 <style>
-   
+   .container{
+       padding-top: 60px;
+       padding-left: 0px;
+       padding-right: 0px;
+       margin-right: 0;
+       margin-left:0;
+   }
 </style>
 @endsection
 
 @section('content')
 
-<div class="panel panel-default">
-    <div class="panel-body">
-            <profile-bar></profile-bar>
+<div class="container">
+    <div class="col-sm-3">
+        <profile-bar></profile-bar>
     </div>
 </div>
     
