@@ -28,7 +28,7 @@
           </ul>
         </li>
       </ul>
-      <form class="navbar-form navbar-left ng-pristine ng-valid" role="search">
+      <form class="navbar-form navbar-center" role="search">
         <div class="form-group">
           <input type="text" class="form-control" placeholder="Search">
         </div>
