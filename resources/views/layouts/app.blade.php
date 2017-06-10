@@ -23,13 +23,13 @@
 <body>
 
         <div id="app">
-                @yield('content')
-            
-            </div>
+            @include('components.nav')
+            @yield('content')    
+        </div>
 
 
-            <script src="{{ url('js/app.js') }}"></script>
-            @yield('scripts')
-    
+        <script src="{{ url('js/app.js') }}"></script>
+        @yield('scripts')
+
 </body>
 </html>
