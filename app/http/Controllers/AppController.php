@@ -25,4 +25,9 @@ class AppController extends Controller
         //abort(400, 'Bad Request');
         return $request->all();
     }
+
+    public function FeedPage()
+    {
+        return view('feed.index');
+    }
 }

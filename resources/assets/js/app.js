@@ -15,3 +15,4 @@ require('./bootstrap');
 
 Vue.component('example', require('./components/Example.vue'));
 Vue.component('preference-card', require('./components/PreferenceCard.vue'));
+Vue.component('profile-bar',require('./components/ProfileBar.vue'));
