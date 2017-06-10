@@ -14,6 +14,11 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
     
     <style>  
+<<<<<<< HEAD
+=======
+           
+            /*==========  Mobile First Method  ==========*/
+>>>>>>> nav bar ko changes
 
 
    
@@ -68,3 +73,13 @@
 
 </body>
 </html>
+
+<style>
+    .navbar-brand {
+        float: left;
+        padding: 10px 10px;
+        font-size: 18px;
+        line-height: 22px;
+        height: 50px;
+    }
+</style>
