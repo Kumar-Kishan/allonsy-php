@@ -16,7 +16,10 @@
      
     <style>  
 
-    
+    body{
+            margin-top: 70px;
+    }
+
     /* Extra Small Devices, Phones */ 
     @media only screen and (min-width : 480px) {
 
