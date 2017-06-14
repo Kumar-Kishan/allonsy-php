@@ -82,4 +82,8 @@
         line-height: 22px;
         height: 50px;
     }
+
+    .form-control {
+    padding: 6px 50px;
+    }
 </style>
