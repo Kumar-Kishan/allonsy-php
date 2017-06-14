@@ -14,12 +14,11 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
     
     <style>  
-<<<<<<< HEAD
-=======
            
             /*==========  Mobile First Method  ==========*/
->>>>>>> nav bar ko changes
-
+            body{
+                margin-top: 70px;
+            }
 
    
 
@@ -57,9 +56,19 @@
 
         
     @yield('styles')        
-    </style>
-
     
+    .navbar-brand {
+        float: left;
+        padding: 10px 10px;
+        font-size: 18px;
+        line-height: 22px;
+        height: 50px;
+    }
+
+    .form-control {
+    padding: 6px 50px;
+    }
+</style>    
 
     <script>
         window.Laravel = {!! json_encode([
@@ -81,19 +90,3 @@
 </body>
 </html>
 
-<<<<<<< HEAD
-<style>
-    .navbar-brand {
-        float: left;
-        padding: 10px 10px;
-        font-size: 18px;
-        line-height: 22px;
-        height: 50px;
-    }
-
-    .form-control {
-    padding: 6px 50px;
-    }
-</style>
-=======
->>>>>>> bb0b354031f16e91dee850fadd4950f9dc1d960a
