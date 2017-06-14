@@ -34,7 +34,7 @@
     </div>
 
     <div class="row buttonrow">
-        <a href="#" id="btn"class="btn btn-bold btn-save btn-danger" style="float:right;"><i class="fa fa-check btn-icon-left"></i>Done</a>
+        <a href="#" id="btn" class="btn btn-bold btn-save btn-danger" style="float:right;"><i class="fa fa-check btn-icon-left"></i>Done</a>
     </div>
   
                 
