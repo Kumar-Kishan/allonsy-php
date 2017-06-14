@@ -1,23 +1,21 @@
 <template lang="html">
-<div class="container-fluid">
-    <form class="form-horizontal ng-pristine ng-valid">
-        <fieldset>
-        <legend> Create a Post/Review</legend>
-
-            <div class="form-group">
-                <textarea class="form-control" rows="4" id="textArea" placeholder="Hey there! Review a place or post about your trip here "></textarea>
+    <div class="container col-md-9">
+        <ul class="nav nav-tabs tabs-material">
+            <li class="active"><a href="#post" data-toggle="tab" aria-expanded="true">Post</a></li>
+            <li class=""><a href="#review" data-toggle="tab" aria-expanded="false">Review</a></li>
+        </ul>
+    
+        <div class="tab-content">
+            <div class="tab-pane fade active in" id="post">
+                <form-component :type="post"></form-component>
             </div>
+            <div class="tab-pane fade" id="review">
+                 <form-component :type="review" ></form-component>
+            </div>
+        </div>
 
-            
-                 <div class="btn-group btn-divided"id="btn">
-                  <a href="javascript:;" class="btn btn-inverted btn-bold btn-danger">Post<i data-text="or"></i></a>
-                  <a href="javascript:;" class="btn btn-inverted btn-bold btn-danger">Review</i></a>
-                  </div>
-            
-
-        </fieldset>
-    </form>
-</div>
+    </div>
+    
 </template>
 
 
@@ -25,15 +23,15 @@
     export default{
          data() {
              return {
-                
-            }
-        }
+                post: {"show" : "false" , "name": "Post", "text": "Hey there! Post about your trip here" },
+                review: {"show": "true", "name": "Review", "text": "Hey there! Review about a place" }
+             }
+        },
+        props: ['preference']
     }
 </script>
 <style lang="css">
-.btn-group{
-    float:right;
-}
+
 textarea{
 
     resize: none;

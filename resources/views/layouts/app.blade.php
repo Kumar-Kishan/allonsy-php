@@ -5,23 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title></title>
-        <!-- CSRF Token -->
+    <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
   
-      <!-- Styles -->
+    <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     <link href="{{ url('css/smt-bootstrap.css')}}" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
-    
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+     
     <style>  
-<<<<<<< HEAD
-=======
-           
-            /*==========  Mobile First Method  ==========*/
->>>>>>> nav bar ko changes
 
-
-   
+    body{
+        margin-top: 70px;
+    }
 
     /* Extra Small Devices, Phones */ 
     @media only screen and (min-width : 480px) {
@@ -69,14 +66,14 @@
 </head>
 <body>
 
-        <div id="app">
-            @include('components.nav')
-            @yield('content')    
-        </div>
+    <div id="app">
+        @include('components.nav')
+        @yield('content')    
+    </div>
 
-
-        <script src="{{ url('js/app.js') }}"></script>
-        @yield('scripts')
+    <script src="{{ url('js/app.js') }}"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    @yield('scripts')
 
 </body>
 </html>
