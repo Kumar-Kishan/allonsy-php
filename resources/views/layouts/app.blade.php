@@ -16,10 +16,7 @@
      
     <style>  
 
-    body{
-        margin-top: 70px;
-    }
-
+    
     /* Extra Small Devices, Phones */ 
     @media only screen and (min-width : 480px) {
 
@@ -54,9 +51,19 @@
 
         
     @yield('styles')        
-    </style>
-
     
+    .navbar-brand {
+        float: left;
+        padding: 10px 10px;
+        font-size: 18px;
+        line-height: 22px;
+        height: 50px;
+    }
+
+    .form-control {
+    padding: 6px 50px;
+    }
+</style>    
 
     <script>
         window.Laravel = {!! json_encode([
