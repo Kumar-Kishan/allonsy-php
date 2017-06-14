@@ -62,7 +62,7 @@ $factory->define(App\Review::class,function (Faker\Generator $faker){
     $story = factory(App\Story::class)->make(['type' => 'review']);
     $story->save();
 
-    $ratings = array('0','1','2','3','4','5');
+    $ratings = array('1','2','3','4','5');
 
     return [
         'text' => $faker->realText(200,2),

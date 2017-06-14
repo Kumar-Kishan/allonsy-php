@@ -3,7 +3,9 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-
+use App\UserAttribute;
+use App\User;
+use Auth;
 class AppController extends Controller
 {
     //
@@ -22,8 +24,26 @@ class AppController extends Controller
 
     public function SavePreferences(Request $request)
     {
-        //abort(400, 'Bad Request');
-        return $request->all();
+        if(count(Auth::user()->attributes)) $userAttribute = Auth::user()->attributes;
+        else $userAttribute = new UserAttribute();
+        
+       // return $request->all();
+
+        $userAttribute->food = $request->fooding / 100;
+        $userAttribute->chill = $request->chilling / 100;
+        $userAttribute->thrill = $request->thrilling / 100;
+        $userAttribute->trek = $request->trekking / 100;
+        $userAttribute->entertainment = $request->entertaining / 100;
+        $userAttribute->pilgrimage = $request->pilgrimaging / 100;
+
+        $userAttribute->user_id = Auth::id();
+
+        if(!$userAttribute->save()){
+            abort(500, 'Error');
+        }
+        else{
+            return ["status" => "ok"];
+        }
     }
 
     public function FeedPage()

@@ -45,5 +45,11 @@ class User extends Authenticatable
     {
         return $this->hasMany('App\RateReview');
     }
+
+
+    public function attributes()
+    {
+        return $this->hasOne('App\UserAttribute');
+    }
 }
 

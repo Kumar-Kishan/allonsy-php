@@ -23,7 +23,7 @@ class CreateReviewsTable extends Migration
             $table->foreign('location_id')->references('id')->on('locations')->onDelete('cascade')->onUpdate('cascade');
             $table->string('text', 200);           
             $table->softDeletes(); 
-            $table->enum('rating',['0','1','2','3','4','5']);
+            $table->enum('rating',['1','2','3','4','5']);
             $table->timestamps();
         });
     }

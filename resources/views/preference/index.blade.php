@@ -97,7 +97,7 @@
                 _token: Laravel.csrfToken
             })
             .then(function (response) {
-                console.log(response);
+                window.location = "/feed";
             })
             .catch(function (error) {
                 //alert(error);
