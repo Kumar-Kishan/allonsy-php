@@ -10,4 +10,10 @@ class Media extends Model
     protected $fillable = [
         'type', 'path',
     ];
+
+
+    public function user()
+    {
+        return $this->hasOne('App\User');
+    }
 }

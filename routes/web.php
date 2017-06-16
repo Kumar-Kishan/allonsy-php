@@ -27,3 +27,6 @@ Route::get('/feed','AppController@FeedPage')->middleware('auth');
 
 Route::post('/post', 'AppController@MakePost')->middleware('auth');
 
+Route::post('/profileImage', 'UserController@ChangeProfilePic')->middleware('auth');
+
+Route::get('/user', 'AppController@GetCurrentUser')->middleware('auth');

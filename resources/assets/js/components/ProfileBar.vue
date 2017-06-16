@@ -5,7 +5,7 @@
             <a id="button" href="#" class="btn btn-circular btn-danger" @click="imgupload" style="display:none"><i class="fa fa-photo"></i></a>
 
 
-            <img @mouseover=inFocus @mouseleave=lostFocus src="images/avatar/big/steve.jpg" />
+            <img @mouseover=inFocus @mouseleave=lostFocus id="profileImage" src="images/avatar/big/steve.jpg" />
 
         </div>
 
@@ -42,9 +42,9 @@
                     var formData =new FormData($('#imageInput')[0]);
 
                     formData.append('inputImage',$('input[type=file]')[0].files[0]);
-                    //formData.append('_token', window.Laravel.csrfToken);
+                    formData.append('_token', window.Laravel.csrfToken);
                     $.ajax({
-                        url:'api/upload',
+                        url:'/profileImage',
                         type:'POST',
                         data: formData,
                         processData: false,
@@ -52,9 +52,11 @@
                         success:function(data){
                             console.log(data);
                             instance.imageId = data.id;
+
+                            $('#profileImage').attr('src','/userimages/' + data.path);
                         },
                         error:function(error){
-                            alert(error);
+                            console.log(error);
                         }
                     });
                 });
