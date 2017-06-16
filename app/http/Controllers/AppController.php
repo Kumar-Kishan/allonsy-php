@@ -6,9 +6,22 @@ use Illuminate\Http\Request;
 use App\UserAttribute;
 use App\User;
 use Auth;
+use App\Media;
+
 class AppController extends Controller
 {
     //
+
+
+    public function upload(Request $request)
+    {
+        $media = new Media();
+        $imageName = time().'.jpg';
+        $request->inputImage->move(public_path('userimages'),$imageName);
+        $media->path = $imageName;
+        $media->save();
+        return $media;
+    }
 
     public function welcome()
     {

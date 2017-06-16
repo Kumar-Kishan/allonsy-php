@@ -94,7 +94,7 @@
                 chilling: $('#Chill').val(),
                 trekking: $('#Trek').val(),
                 entertaining: $('#Entertainment').val(),
-                _token: Laravel.csrfToken
+                //_token: Laravel.csrfToken
             })
             .then(function (response) {
                 window.location = "/feed";

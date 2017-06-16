@@ -12452,6 +12452,12 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* WEBPACK VAR INJECTION */(function($) {//
+//
+//
+//
+//
+//
 //
 //
 //
@@ -12509,7 +12515,8 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony default export */ __webpack_exports__["default"] = ({
     data: function data() {
         return {
-            inputText: ""
+            inputText: "",
+            imageId: ""
         };
     },
 
@@ -12522,16 +12529,45 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
             }
             console.log(this.inputText);
             axios.post('/post', {
-                text: this.inputText
+                text: this.inputText,
+                imageId: this.imageId
             }).then(function (response) {
                 console.log(response);
             }).catch(function (error) {
                 console.log(error);
             });
+        },
+
+        imgupload: function imgupload(event) {
+            var instance = this;
+            $("#imginput").click();
+            $('input#imginput').change(function () {
+
+                var formData = new FormData($('#imageInput')[0]);
+
+                formData.append('inputImage', $('input[type=file]')[0].files[0]);
+                //formData.append('_token', window.Laravel.csrfToken);
+                $.ajax({
+                    url: 'api/upload',
+                    type: 'POST',
+                    data: formData,
+                    processData: false,
+                    contentType: false,
+                    success: function success(data) {
+                        console.log(data);
+                        instance.imageId = data.id;
+                    },
+                    error: function error(_error) {
+                        alert(_error);
+                    }
+                });
+            });
         }
+
     }
 
 });
+/* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__(5)))
 
 /***/ }),
 /* 35 */
@@ -12623,6 +12659,12 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* WEBPACK VAR INJECTION */(function($) {//
+//
+//
+//
+//
+//
 //
 //
 //
@@ -12645,8 +12687,43 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
         return {};
     },
 
+    methods: {
+        inFocus: function inFocus(event) {
+            $('#button').show();
+        },
+        lostFocus: function lostFocus(event) {
+            $('#button').hide();
+        },
+        imgupload: function imgupload(event) {
+            var instance = this;
+            $("#imginput").click();
+            $('input#imginput').change(function () {
+
+                var formData = new FormData($('#imageInput')[0]);
+
+                formData.append('inputImage', $('input[type=file]')[0].files[0]);
+                //formData.append('_token', window.Laravel.csrfToken);
+                $.ajax({
+                    url: 'api/upload',
+                    type: 'POST',
+                    data: formData,
+                    processData: false,
+                    contentType: false,
+                    success: function success(data) {
+                        console.log(data);
+                        instance.imageId = data.id;
+                    },
+                    error: function error(_error) {
+                        alert(_error);
+                    }
+                });
+            });
+        }
+
+    },
     props: ['user']
 });
+/* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__(5)))
 
 /***/ }),
 /* 38 */
@@ -15088,7 +15165,7 @@ if (typeof jQuery === 'undefined') {
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(2)();
-exports.push([module.i, "\n#imgupload{\n    padding: 5px;\n    float: left;\n}\n", ""]);
+exports.push([module.i, "\n#imgupload{\n    padding: 5px;\n    float: left;\n}\n#tags{\n    border-radius: 5px;\n}\n", ""]);
 
 /***/ }),
 /* 41 */
@@ -15102,7 +15179,7 @@ exports.push([module.i, "\n.reveal-dim > .item > img {\r\n  position: absolute;\
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(2)();
-exports.push([module.i, "\n.abc{\r\n    padding top: 70px;\n}\r\n\r\n", ""]);
+exports.push([module.i, "\n.card-image{    \r\n    display:inline-block;\r\n    position: relative;\n}\n.card-image a{\r\n    margin-top:10px;\r\n    margin-left: 10px;\r\n    position: absolute;\n}\n.img{\r\n    height: 100px;\r\n    width: 100px;\n}\r\n\r\n\r\n", ""]);
 
 /***/ }),
 /* 43 */
@@ -32217,7 +32294,7 @@ var Component = __webpack_require__(1)(
   /* cssModules */
   null
 )
-Component.options.__file = "C:\\Users\\kumar\\Documents\\PHP\\allons-y\\resources\\assets\\js\\components\\Example.vue"
+Component.options.__file = "C:\\Users\\Nikita\\Documents\\allons-y\\resources\\assets\\js\\components\\Example.vue"
 if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key !== "__esModule"})) {console.error("named exports are not supported in *.vue files.")}
 if (Component.options.functional) {console.error("[vue-loader] Example.vue: functional components are not supported with templates, they should use render functions.")}
 
@@ -32255,7 +32332,7 @@ var Component = __webpack_require__(1)(
   /* cssModules */
   null
 )
-Component.options.__file = "C:\\Users\\kumar\\Documents\\PHP\\allons-y\\resources\\assets\\js\\components\\Form.vue"
+Component.options.__file = "C:\\Users\\Nikita\\Documents\\allons-y\\resources\\assets\\js\\components\\Form.vue"
 if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key !== "__esModule"})) {console.error("named exports are not supported in *.vue files.")}
 if (Component.options.functional) {console.error("[vue-loader] Form.vue: functional components are not supported with templates, they should use render functions.")}
 
@@ -32293,7 +32370,7 @@ var Component = __webpack_require__(1)(
   /* cssModules */
   null
 )
-Component.options.__file = "C:\\Users\\kumar\\Documents\\PHP\\allons-y\\resources\\assets\\js\\components\\PostComposer.vue"
+Component.options.__file = "C:\\Users\\Nikita\\Documents\\allons-y\\resources\\assets\\js\\components\\PostComposer.vue"
 if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key !== "__esModule"})) {console.error("named exports are not supported in *.vue files.")}
 if (Component.options.functional) {console.error("[vue-loader] PostComposer.vue: functional components are not supported with templates, they should use render functions.")}
 
@@ -32331,7 +32408,7 @@ var Component = __webpack_require__(1)(
   /* cssModules */
   null
 )
-Component.options.__file = "C:\\Users\\kumar\\Documents\\PHP\\allons-y\\resources\\assets\\js\\components\\PreferenceCard.vue"
+Component.options.__file = "C:\\Users\\Nikita\\Documents\\allons-y\\resources\\assets\\js\\components\\PreferenceCard.vue"
 if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key !== "__esModule"})) {console.error("named exports are not supported in *.vue files.")}
 if (Component.options.functional) {console.error("[vue-loader] PreferenceCard.vue: functional components are not supported with templates, they should use render functions.")}
 
@@ -32369,7 +32446,7 @@ var Component = __webpack_require__(1)(
   /* cssModules */
   null
 )
-Component.options.__file = "C:\\Users\\kumar\\Documents\\PHP\\allons-y\\resources\\assets\\js\\components\\ProfileBar.vue"
+Component.options.__file = "C:\\Users\\Nikita\\Documents\\allons-y\\resources\\assets\\js\\components\\ProfileBar.vue"
 if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key !== "__esModule"})) {console.error("named exports are not supported in *.vue files.")}
 if (Component.options.functional) {console.error("[vue-loader] ProfileBar.vue: functional components are not supported with templates, they should use render functions.")}
 
@@ -32394,7 +32471,9 @@ module.exports = Component.exports
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('form', {
+  return _c('div', {
+    staticClass: "form-wrapper"
+  }, [_c('form', {
     staticClass: "form-horizontal ng-pristine ng-valid storyForm"
   }, [_c('fieldset', [_vm._m(0), _vm._v(" "), (_vm.type.show === 'true') ? _c('div', {
     staticClass: "form-group"
@@ -32424,7 +32503,21 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
         _vm.inputText = $event.target.value
       }
     }
-  })])]), _vm._v(" "), _vm._m(2), _vm._v(" "), _c('div', {
+  })])]), _vm._v(" "), _c('div', {
+    staticClass: "form-group"
+  }, [_c('div', {
+    staticClass: "col-sm-2"
+  }, [_c('a', {
+    staticClass: "btn btn-inverted btn-bold btn-danger",
+    attrs: {
+      "href": "javascript:;"
+    },
+    on: {
+      "click": _vm.imgupload
+    }
+  }, [_c('i', {
+    staticClass: "fa fa-photo btn-icon-left"
+  }), _vm._v("Photo")])])]), _vm._v(" "), _c('div', {
     staticClass: "form-group"
   }, [_c('div', {
     staticClass: "col-lg-2 col-lg-offset-10"
@@ -32439,7 +32532,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     on: {
       "click": _vm.post
     }
-  }, [_vm._v(_vm._s(_vm.type.name))])])])])])
+  }, [_vm._v(_vm._s(_vm.type.name))])])])])]), _vm._v(" "), _vm._m(2)])
 },staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('div', {
     staticClass: "form-group"
@@ -32497,19 +32590,21 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     }
   })])])
 },function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', {
-    staticClass: "form-group"
-  }, [_c('div', {
-    staticClass: "col-sm-2"
-  }, [_c('a', {
-    staticClass: "btn btn-inverted btn-bold btn-danger",
+  return _c('form', {
     attrs: {
-      "href": "javascript:;",
-      "id": "imgupload"
+      "id": "imageInput",
+      "enctype": "multipart/form-data"
     }
-  }, [_c('i', {
-    staticClass: "fa fa-photo btn-icon-left"
-  }), _vm._v("Photo/Video")])])])
+  }, [_c('input', {
+    staticStyle: {
+      "display": "none"
+    },
+    attrs: {
+      "id": "imginput",
+      "type": "file",
+      "name": "image"
+    }
+  })])
 }]}
 module.exports.render._withStripped = true
 if (false) {
@@ -32604,8 +32699,6 @@ if (false) {
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _vm._m(0)
-},staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('div', {
     staticClass: "card",
     attrs: {
@@ -32613,12 +32706,34 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     }
   }, [_c('div', {
     staticClass: "card-image"
-  }, [_c('img', {
+  }, [_c('a', {
+    staticClass: "btn btn-circular btn-danger",
+    staticStyle: {
+      "display": "none"
+    },
     attrs: {
-      "src": "images/avatar/big/elliot.jpg"
+      "id": "button",
+      "href": "#"
+    },
+    on: {
+      "click": _vm.imgupload
     }
-  })]), _vm._v(" "), _c('div', {
+  }, [_c('i', {
+    staticClass: "fa fa-photo"
+  })]), _vm._v(" "), _c('img', {
+    attrs: {
+      "src": "images/avatar/big/steve.jpg"
+    },
+    on: {
+      "mouseover": _vm.inFocus,
+      "mouseleave": _vm.lostFocus
+    }
+  })]), _vm._v(" "), _vm._m(0)])
+},staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', {
     staticClass: "card-content"
+  }, [_c('div', {
+    staticClass: "text-center"
   }, [_c('a', {
     staticClass: "card-header"
   }, [_vm._v("name")])])])
@@ -32829,7 +32944,7 @@ module.exports = function listToStyles (parentId, list) {
 
 "use strict";
 /* WEBPACK VAR INJECTION */(function(process, global) {/*!
- * Vue.js v2.3.4
+ * Vue.js v2.3.3
  * (c) 2014-2017 Evan You
  * Released under the MIT License.
  */
@@ -37258,7 +37373,7 @@ Object.defineProperty(Vue$3.prototype, '$ssrContext', {
   }
 });
 
-Vue$3.version = '2.3.4';
+Vue$3.version = '2.3.3';
 
 /*  */
 
@@ -37749,7 +37864,6 @@ function createPatchFunction (backend) {
   function initComponent (vnode, insertedVnodeQueue) {
     if (isDef(vnode.data.pendingInsert)) {
       insertedVnodeQueue.push.apply(insertedVnodeQueue, vnode.data.pendingInsert);
-      vnode.data.pendingInsert = null;
     }
     vnode.elm = vnode.componentInstance.$el;
     if (isPatchable(vnode)) {
