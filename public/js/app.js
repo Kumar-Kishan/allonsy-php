@@ -11569,6 +11569,7 @@ Vue.component('preference-card', __webpack_require__(48));
 Vue.component('profile-bar', __webpack_require__(49));
 Vue.component('post-composer', __webpack_require__(47));
 Vue.component('form-component', __webpack_require__(46));
+Vue.component('news-feed', __webpack_require__(70));
 
 /***/ }),
 /* 14 */
@@ -12520,7 +12521,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
         };
     },
 
-    props: ['preference', 'type'],
+    props: ['type'],
     methods: {
         post: function post(event) {
             var postType = "Post";
@@ -32736,7 +32737,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     staticClass: "text-center"
   }, [_c('a', {
     staticClass: "card-header"
-  }, [_vm._v("name")])])])
+  }, [_vm._v("user.name")])])])
 }]}
 module.exports.render._withStripped = true
 if (false) {
@@ -42671,6 +42672,171 @@ module.exports = function(module) {
 __webpack_require__(13);
 module.exports = __webpack_require__(14);
 
+
+/***/ }),
+/* 63 */,
+/* 64 */,
+/* 65 */,
+/* 66 */,
+/* 67 */,
+/* 68 */,
+/* 69 */,
+/* 70 */
+/***/ (function(module, exports, __webpack_require__) {
+
+
+/* styles */
+__webpack_require__(74)
+
+var Component = __webpack_require__(1)(
+  /* script */
+  __webpack_require__(71),
+  /* template */
+  __webpack_require__(73),
+  /* scopeId */
+  null,
+  /* cssModules */
+  null
+)
+Component.options.__file = "C:\\Users\\Nikita\\Documents\\allons-y\\resources\\assets\\js\\components\\NewsFeed.vue"
+if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key !== "__esModule"})) {console.error("named exports are not supported in *.vue files.")}
+if (Component.options.functional) {console.error("[vue-loader] NewsFeed.vue: functional components are not supported with templates, they should use render functions.")}
+
+/* hot reload */
+if (false) {(function () {
+  var hotAPI = require("vue-hot-reload-api")
+  hotAPI.install(require("vue"), false)
+  if (!hotAPI.compatible) return
+  module.hot.accept()
+  if (!module.hot.data) {
+    hotAPI.createRecord("data-v-4e2662c4", Component.options)
+  } else {
+    hotAPI.reload("data-v-4e2662c4", Component.options)
+  }
+})()}
+
+module.exports = Component.exports
+
+
+/***/ }),
+/* 71 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+/* harmony default export */ __webpack_exports__["default"] = ({
+    data: function data() {
+        return {};
+    }
+});
+
+/***/ }),
+/* 72 */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(2)();
+exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
+
+/***/ }),
+/* 73 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _vm._m(0)
+},staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', {
+    staticClass: "well col-sm-9"
+  }, [_c('div', {
+    staticClass: "ui feed"
+  }, [_c('div', {
+    staticClass: "event"
+  }, [_c('div', {
+    staticClass: "label"
+  }, [_c('img', {
+    attrs: {
+      "src": "/images/avatar/small/elliot.jpg"
+    }
+  })]), _vm._v(" "), _c('div', {
+    staticClass: "content"
+  }, [_c('div', {
+    staticClass: "summary"
+  }, [_c('a', {
+    staticClass: "user"
+  }, [_vm._v("\r\n                        Elliot Fu\r\n                    ")]), _vm._v(" added you as a friend\r\n                    "), _c('div', {
+    staticClass: "date"
+  }, [_vm._v("\r\n                        1 Hour Ago\r\n                    ")])]), _vm._v(" "), _c('div', {
+    staticClass: "meta"
+  }, [_c('a', {
+    staticClass: "like"
+  }, [_c('i', {
+    staticClass: "like icon"
+  }), _vm._v(" 4 Likes\r\n                    ")])])])])])])
+}]}
+module.exports.render._withStripped = true
+if (false) {
+  module.hot.accept()
+  if (module.hot.data) {
+     require("vue-hot-reload-api").rerender("data-v-4e2662c4", module.exports)
+  }
+}
+
+/***/ }),
+/* 74 */
+/***/ (function(module, exports, __webpack_require__) {
+
+// style-loader: Adds some css to the DOM by adding a <style> tag
+
+// load the styles
+var content = __webpack_require__(72);
+if(typeof content === 'string') content = [[module.i, content, '']];
+if(content.locals) module.exports = content.locals;
+// add the styles to the DOM
+var update = __webpack_require__(3)("7d53ff5a", content, false);
+// Hot Module Replacement
+if(false) {
+ // When the styles change, update the <style> tags
+ if(!content.locals) {
+   module.hot.accept("!!../../../../node_modules/css-loader/index.js!../../../../node_modules/vue-loader/lib/style-rewriter.js?id=data-v-4e2662c4!../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./NewsFeed.vue", function() {
+     var newContent = require("!!../../../../node_modules/css-loader/index.js!../../../../node_modules/vue-loader/lib/style-rewriter.js?id=data-v-4e2662c4!../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./NewsFeed.vue");
+     if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+     update(newContent);
+   });
+ }
+ // When the module is disposed, remove the <style> tags
+ module.hot.dispose(function() { update(); });
+}
 
 /***/ })
 /******/ ]);
