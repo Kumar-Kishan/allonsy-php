@@ -68,4 +68,15 @@ class AppController extends Controller
     {
         return $request->all();
     }
+
+    public function GetCurrentUser()
+    {
+        $userId = Auth::id();
+
+        $user = User::with('profileImage')->find($userId);
+
+        return $user;
+
+
+    }
 }
