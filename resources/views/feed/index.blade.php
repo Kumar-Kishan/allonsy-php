@@ -15,15 +15,10 @@
             <post-composer></post-composer>
     </div>
 
-<<<<<<< HEAD
      <div class="col-sm-3">
         <div class="bs-divider"><i class="fa fa-star"></i> Recommendations <i class="fa fa-star"></i></div>
 
         <suggestion-box></suggestion-box>
-=======
-    <div class="col-sm-3">
-       
->>>>>>> 7e0c13dcc952187be247d226a75c99b00005a64a
     </div>
 
 </div>
