@@ -13,7 +13,6 @@
                  <form-component :type="review" ></form-component>
             </div>
         </div>
-
     </div>
     
 </template>
