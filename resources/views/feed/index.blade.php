@@ -11,9 +11,15 @@
     </div>
 
     <div class="col-sm-6">
-        <post-composer></post-composer>
+            <post-composer></post-composer>
     </div>
     
+    
+    <div class="col-sm-3">
+        <div class="bs-divider"><i class="fa fa-star"></i> Recommendations <i class="fa fa-star"></i></div>
+
+        <suggestion-box></suggestion-box>
+    </div>
 
 @endsection
 
@@ -23,7 +29,7 @@
          const app = new Vue({
             el: '#app',
             data:{
-                
+                abc: {"user":"Kishan"}
             }
 
         });
@@ -63,3 +69,10 @@
     });
 </script>
 @endsection
+
+@section('styles')
+<style>
+.bs-divider {
+    color: indianred;
+}
+</style>
