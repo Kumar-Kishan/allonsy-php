@@ -1,5 +1,5 @@
 <template lang="html">
-<div class="well col-sm-9">
+<div class="well col-sm-12">
     
     <div class="ui feed">
         <div class="event">
@@ -9,17 +9,27 @@
             <div class="content">
                 <div class="summary">
                     <a class="user">
-                        Elliot Fu
+                        user.name
                     </a> added you as a friend
                     <div class="date">
-                        1 Hour Ago
+                        {created date}
                     </div>
                 </div>
+                
                 <div class="meta">
-                    <a class="like">
-                        <i class="like icon"></i> 4 Likes
+                    <a class="rate">
+                        <i class="like icon"></i> {likes}
                     </a>
                 </div>
+            </div>
+        </div>
+
+        <div class="event">
+            <div class="content">
+                <div class="label">
+                    <img src="/images/avatar/small/elliot.jpg">
+                </div>
+                You added Elliot Fu to the group <a>Coworkers</a>
             </div>
         </div>
     </div>
@@ -32,6 +42,9 @@
 <script>
     export default{
          data() {
+             events:[
+                 {}
+             ]
              return {
                 
             }

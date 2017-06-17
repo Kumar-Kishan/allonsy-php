@@ -1,5 +1,5 @@
 <template lang="html">
-    <div class="container col-md-9">
+    <div class="container col-md-12">
         <ul class="nav nav-tabs tabs-material">
             <li class="active"><a href="#post" data-toggle="tab" aria-expanded="true">Post</a></li>
             <li class=""><a href="#review" data-toggle="tab" aria-expanded="false">Review</a></li>
