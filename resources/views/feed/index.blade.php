@@ -14,10 +14,12 @@
             <post-composer></post-composer>
     </div>
 
-    <div class="col-sm-3">
-       <p> hello </p>
+     <div class="col-sm-3">
+        <div class="bs-divider"><i class="fa fa-star"></i> Recommendations <i class="fa fa-star"></i></div>
+
+        <suggestion-box></suggestion-box>
     </div>
-    
+
 </div>
 
 <div class="row">
@@ -28,12 +30,7 @@
 
     
     
-    <div class="col-sm-3">
-        <div class="bs-divider"><i class="fa fa-star"></i> Recommendations <i class="fa fa-star"></i></div>
-
-        <suggestion-box></suggestion-box>
-    </div>
-
+  
 @endsection
 
 @section('scripts')

@@ -1,6 +1,6 @@
 <template lang="html">
     <div class="well">
-        {{suggest.place}}
+        <p>{{suggest.place}}</p>
         {{suggest.distance}}
     </div>
 </template>
