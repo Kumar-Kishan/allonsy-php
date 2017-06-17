@@ -5,7 +5,7 @@
 @endsection
 
 @section('content')
-
+<div class="row">
     <div class="col-sm-3">
         <profile-bar></profile-bar>
     </div>
@@ -13,6 +13,19 @@
     <div class="col-sm-6">
             <post-composer></post-composer>
     </div>
+
+    <div class="col-sm-3">
+       <p> hello </p>
+    </div>
+    
+</div>
+
+<div class="row">
+    <div class="col-sm-6 col-sm-offset-3">
+        <news-feed></news-feed>
+    </div>
+</div> 
+
     
     
     <div class="col-sm-3">

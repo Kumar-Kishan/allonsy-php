@@ -12523,7 +12523,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
         };
     },
 
-    props: ['preference', 'type'],
+    props: ['type'],
     methods: {
         post: function post(event) {
             var postType = "Post";
@@ -32741,7 +32741,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     staticClass: "text-center"
   }, [_c('a', {
     staticClass: "card-header"
-  }, [_vm._v("name")])])])
+  }, [_vm._v("user.name")])])])
 }]}
 module.exports.render._withStripped = true
 if (false) {
