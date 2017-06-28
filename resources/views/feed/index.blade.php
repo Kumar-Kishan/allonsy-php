@@ -7,6 +7,7 @@
 
 @section('content')
 <div class="row">
+
     <div class="col-sm-3">    
         <profile-bar :user="user"></profile-bar>
     </div>
