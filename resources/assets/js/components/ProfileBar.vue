@@ -11,7 +11,7 @@
 
         <div class="card-content">
             <div class="text-center">
-            <a class="card-header">name</a>
+            <a class="card-header">user.name</a>
             </div>
         </div>            
 

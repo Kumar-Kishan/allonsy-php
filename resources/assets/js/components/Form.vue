@@ -65,7 +65,7 @@
                  imageId: ""
             }
         },
-        props: ['preference', 'type'],
+        props: ['type'],
         methods: {
             post: function(event){
                 var postType = "Post";

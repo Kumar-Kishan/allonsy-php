@@ -18,6 +18,6 @@ Vue.component('preference-card', require('./components/PreferenceCard.vue'));
 Vue.component('profile-bar',require('./components/ProfileBar.vue'));
 Vue.component('post-composer', require('./components/PostComposer.vue'));
 Vue.component('form-component', require('./components/Form.vue'));
-
-Vue.component('suggestion',require('./components/Suggestion.vue') )
-
+Vue.component('trending',require('./components/Trending.vue'));
+Vue.component('suggestion-box',require('./components/SuggestionBox.vue'));
+Vue.component('suggestion',require('./components/Suggestion.vue'));

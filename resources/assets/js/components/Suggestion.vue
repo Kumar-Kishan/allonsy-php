@@ -1,4 +1,5 @@
 <template lang="html">
+<<<<<<< HEAD
     <div class="card">
         <div class="card-content">
             <div class="pull-right">14h</div><img class="card-avatar card-image" src="images/avatar/big/steve.jpg"> {{ post.user }} </div>
@@ -20,6 +21,12 @@
         </div>
     </div>
     
+=======
+    <div class="well">
+        <p>{{suggest.place}}</p>
+        {{suggest.distance}}
+    </div>
+>>>>>>> 38b8680e5ad66f4d5ee99077a274dd252da182e1
 </template>
 
 
@@ -27,6 +34,7 @@
     export default{
          data() {
              return {
+<<<<<<< HEAD
                 likes: 0,
                 comments: 0
             }
@@ -37,6 +45,13 @@
                 this.likes += 1;
             }
         }
+=======
+               
+            }
+        },
+       props: ['suggest']
+
+>>>>>>> 38b8680e5ad66f4d5ee99077a274dd252da182e1
     }
 </script>
 <style lang="css">
