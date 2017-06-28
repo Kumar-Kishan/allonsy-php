@@ -21,10 +21,12 @@
 
             }
         },
+        props: ['url'],
         created: function(){
             var random = Math.random();
             var instance = this;
-            axios.get('/feeds/'+random).then(function(response){
+            var url = this.url;
+            axios.get(url + random).then(function(response){
                 instance.current_page = response.data.current_page;
                 instance.stories = response.data.data;
                 instance.next_page_url = response.data.next_page_url;

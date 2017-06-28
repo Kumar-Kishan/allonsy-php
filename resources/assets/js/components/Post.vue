@@ -2,7 +2,7 @@
     
     <div class="card">
         <div class="card-content">
-            <div class="pull-right"></div><img class="card-avatar card-image" src="images/avatar/big/steve.jpg"> Steve</div>
+            <div class="pull-right">Post</div><img class="card-avatar card-image" src="images/avatar/big/steve.jpg"> Steve</div>
         
             <div class="card-image">
                 <img :src=imageSrc>
@@ -10,7 +10,7 @@
 
             <div class="card-content">
                 <span class="pull-right"><i class="fa fa-heart"></i> 17 likes </span>
-                <i class="fa fa-comment"></i> 3 comments
+                <i class="fa fa-comment"></i> 
             </div>
             <div class="card-extra card-content">
                 <div class="input-group">
@@ -32,7 +32,6 @@
     export default{
          data() {
              return {
-                image: ""
             }
         },
         props: ['story'],

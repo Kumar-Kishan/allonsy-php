@@ -5,12 +5,12 @@
             <div class="pull-right">Review</div><img class="card-avatar card-image" src="images/avatar/big/steve.jpg"> Steve</div>
         
             <div class="card-image">
-                <img src="images/wallpapers(13).png">
+                 <img :src=imageSrc>
             </div>
 
             <div class="card-content">
                 <span class="pull-right"><i class="fa fa-heart"></i> 17 likes </span>
-                <i class="fa fa-comment"></i> 3 comments
+                <i class="fa fa-comment"></i> 18 comments
             </div>
             <div class="card-extra card-content">
                 <div class="input-group">
@@ -30,11 +30,13 @@
 <script>
     export default{
          data() {
-             return {
-                
+            return {
             }
-        },
-        props: ['story']
+        },computed: {
+            imageSrc:  function(){
+                return 'images/'+  this.story.review.media.path;
+            }
+        },   props: ['story']
     }
 </script>
 <style lang="css">
