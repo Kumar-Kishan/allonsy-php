@@ -1,8 +1,32 @@
 <template lang="html">
+<<<<<<< HEAD
+    <div class="card">
+        <div class="card-content">
+            <div class="pull-right">14h</div><img class="card-avatar card-image" src="images/avatar/big/steve.jpg"> {{ post.user }} </div>
+        <div class="card-image">
+            <img src="images/chill.jpg">
+        </div>
+        <div class="card-content">
+            <span class="pull-right"><i class="fa fa-heart"></i> {{ likes }} likes </span>
+            <i class="fa fa-comment"></i> {{ comments }} comments
+        </div>
+        <div class="card-extra card-content">
+            <div class="input-group">
+            <input class="form-control" type="text" placeholder="Add comment...">
+            <div class="input-group-btn">
+                <a class="btn btn-inverted btn-default" @click="addComment"><i class="fa fa-paper-plane"></i></a>
+            </div>
+            </div>
+            <post-composer></post-composer>
+        </div>
+    </div>
+    
+=======
     <div class="well">
         <p>{{suggest.place}}</p>
         {{suggest.distance}}
     </div>
+>>>>>>> 38b8680e5ad66f4d5ee99077a274dd252da182e1
 </template>
 
 
@@ -10,11 +34,24 @@
     export default{
          data() {
              return {
+<<<<<<< HEAD
+                likes: 0,
+                comments: 0
+            }
+        },
+        props : ['post'],
+        methods:{
+            addComment: function(event){
+                this.likes += 1;
+            }
+        }
+=======
                
             }
         },
        props: ['suggest']
 
+>>>>>>> 38b8680e5ad66f4d5ee99077a274dd252da182e1
     }
 </script>
 <style lang="css">

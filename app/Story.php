@@ -15,14 +15,15 @@ class Story extends Model
 
     public function review()
     {
-        if($this->type == 0)
+        
+        if($this->type === 'review')
         {
             return $this->hasOne('App\Review');
         }
     }
     public function post()
     {
-        if($this->type == 1)
+        if($this->type === 'posts')
         {
             return $this->hasOne('App\Post');
         }

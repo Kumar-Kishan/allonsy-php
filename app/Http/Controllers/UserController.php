@@ -7,6 +7,8 @@ use Illuminate\Http\Request;
 use Auth;
 use App\Media;
 use App\User;
+use App\Story;
+use DB;
 class UserController extends Controller
 {
     public function ChangeProfilePic(Request $req)
@@ -34,5 +36,21 @@ class UserController extends Controller
 
 
         return $profileImage;
+    }
+
+
+    public function UserFeed($random)
+    {
+        //$stories = Story::with('post')->find(1);
+        $story = Story::orderBy(DB::raw('RAND('.$random.')'))
+                ->paginate(15);
+        $items = $story->items();
+
+        foreach($items as $item)
+        {
+            if($item->type === 'posts' ) $item->post->media;
+            else $item->review->media;
+        }        
+        return $story;
     }
 }

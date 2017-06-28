@@ -15,8 +15,11 @@ class AppController extends Controller
 
     public function upload(Request $request)
     {
+        $this->validate($request,[
+            'inputImage' =>  'required|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
+        ]);
         $media = new Media();
-        $imageName = time().'.jpg';
+        $imageName = time().'.'.$request->inputImage->getClientOriginalExtension();
         $request->inputImage->move(public_path('userimages'),$imageName);
         $media->path = $imageName;
         $media->save();
