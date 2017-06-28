@@ -39,15 +39,7 @@
          const app = new Vue({
             el: '#app',
             data:{
-<<<<<<< HEAD
                user: {!! Auth::user() !!}
-=======
-<<<<<<< HEAD
-                xyz: { "user":"Steve" }
-=======
-                abc: {"user":"Kishan"}
->>>>>>> 38b8680e5ad66f4d5ee99077a274dd252da182e1
->>>>>>> f4567d791a97e98815ae5d8ef48888d017c00097
             }
 
         });
