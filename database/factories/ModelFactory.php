@@ -75,7 +75,7 @@ $factory->define(App\Review::class,function (Faker\Generator $faker){
 $factory->define(App\Media::class,function (Faker\Generator $faker){
 
 
-    $paths = array('background.jpg', 'scenery (1).jpg','scenery (2).jpg','scenery (3).jpg', 'scenery (4).jpg', 'scenery (5).jpg');
+    $paths = array('background.png', 'chill.jpg','food.jpg','pilgrimage.jpg', 'prefback.jpg', 'review.jpg');
     return [
         'type' => 'image',
         'path' => $paths[rand()%6],  

@@ -15,7 +15,7 @@
 
             <post-composer></post-composer>
             <div class="col-sm-12">
-                <news-feed></news-feed>
+                <news-feed :url=url></news-feed>
             </div>
 
     </div>
@@ -27,10 +27,7 @@
 
 </div>
 
-<div class="row">
-</div> 
  
-  
 @endsection
 
 @section('scripts')
@@ -39,7 +36,8 @@
          const app = new Vue({
             el: '#app',
             data:{
-               user: {!! Auth::user() !!}
+               user: {!! Auth::user() !!},
+               url: "/feeds/"
             }
 
         });
