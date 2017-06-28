@@ -14,11 +14,11 @@ class Review extends Model
 
     public function media()
     {
-        return $this->hasOne('App\Media');
+        return $this->belongsTo('App\Media');
     }
     public function location()
     {
-        return $this->hasOne('App\Location');
+        return $this->belongsTo('App\Location');
     }
 
 }

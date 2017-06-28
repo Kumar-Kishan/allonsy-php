@@ -69,7 +69,7 @@ $factory->define(App\Review::class,function (Faker\Generator $faker){
         'media_id' => factory(App\Media::class)->create()->id,
         'story_id' => $story->id,
         'location_id'=> factory(App\Location::class)->create()->id,
-        'rating' => $ratings[rand()%6],
+        'rating' => $ratings[rand()%5],
     ];
 });
 $factory->define(App\Media::class,function (Faker\Generator $faker){

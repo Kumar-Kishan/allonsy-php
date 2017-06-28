@@ -12,6 +12,7 @@
 
     <div class="col-sm-6">
         <post-composer></post-composer>
+        <suggestion :post="xyz"></suggestion>
     </div>
     
 
@@ -23,7 +24,7 @@
          const app = new Vue({
             el: '#app',
             data:{
-                
+                xyz: { "user":"Steve" }
             }
 
         });
