@@ -38,4 +38,10 @@ class Story extends Model
     {
         return $this->hasOne('App\StoryAttribute');
     }
+
+
+    public function user()
+    {
+        return $this->belongsTo('App\User');
+    }
 }

@@ -2,7 +2,7 @@
     
     <div class="card">
         <div class="card-content">
-            <div class="pull-right">Review</div><img class="card-avatar card-image" src="images/avatar/big/steve.jpg"> Steve</div>
+            <div class="pull-right">Review</div><img class="card-avatar card-image" src="images/avatar/big/steve.jpg">{{story.user.name}}</div>
         
             <div class="card-description">
                     <p class="text-danger">{{reviewText}}</p>
@@ -15,7 +15,7 @@
             
           <div class="card-meta">
             <span class="pull-right">
-                <star-rating></star-rating>
+                
             </span>
 
               <i class="fa fa-comment"></i> 18 comments
