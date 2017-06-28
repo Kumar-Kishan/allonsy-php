@@ -11,7 +11,7 @@
 
         <div class="card-content">
             <div class="text-center">
-            <a class="card-header">user.name</a>
+            <a class="card-header">{{user.name}}</a>
             </div>
         </div>            
 
@@ -27,6 +27,7 @@
                 
             }
         },
+        props :['user'],
          methods: {
             inFocus: function(event){
                 $('#button').show();

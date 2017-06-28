@@ -1,5 +1,5 @@
 <template lang="html">
-<div class="well col-sm-12">
+<div class="well">
     
     <div class="ui feed">
         <div class="event">
@@ -9,7 +9,6 @@
             <div class="content">
                 <div class="summary">
                     <a class="user">
-                        user.name
                     </a> added you as a friend
                     <div class="date">
                         {created date}
@@ -42,11 +41,13 @@
 <script>
     export default{
          data() {
-             events:[
-                 {}
-             ]
+             
              return {
-                
+                current_page:1,
+                stories:"",
+                next_page:2,
+                next_page_url:""
+
             }
         }
     }

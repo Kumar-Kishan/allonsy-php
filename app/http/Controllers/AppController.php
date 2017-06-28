@@ -64,6 +64,10 @@ class AppController extends Controller
         return view('feed.index');
     }
 
+    public function CompanyPage()
+    {
+        return view('company.index');
+    }
     public function MakePost(Request $request)
     {
         return $request->all();

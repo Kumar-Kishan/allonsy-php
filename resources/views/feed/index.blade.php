@@ -8,29 +8,26 @@
 @section('content')
 <div class="row">
     <div class="col-sm-3">    
-        <profile-bar></profile-bar>
+        <profile-bar :user="user"></profile-bar>
     </div>
 
     <div class="col-sm-6">
             <post-composer></post-composer>
+            <div class="col-sm-12">
+                <news-feed></news-feed>
+            </div>
     </div>
 
      <div class="col-sm-3">
         <div class="bs-divider"><i class="fa fa-star"></i> Recommendations <i class="fa fa-star"></i></div>
-
         <suggestion-box></suggestion-box>
     </div>
 
 </div>
 
 <div class="row">
-    <div class="col-sm-6 col-sm-offset-3">
-        <news-feed></news-feed>
-    </div>
 </div> 
-
-    
-    
+ 
   
 @endsection
 
@@ -40,7 +37,7 @@
          const app = new Vue({
             el: '#app',
             data:{
-                abc: {"user":"Kishan"}
+               user: {!! Auth::user() !!}
             }
 
         });

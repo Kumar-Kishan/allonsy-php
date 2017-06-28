@@ -21,3 +21,6 @@ Vue.component('form-component', require('./components/Form.vue'));
 Vue.component('trending',require('./components/Trending.vue'));
 Vue.component('suggestion-box',require('./components/SuggestionBox.vue'));
 Vue.component('suggestion',require('./components/Suggestion.vue'));
+Vue.component('news-feed',require('./components/NewsFeed.vue'));
+Vue.component('user-post',require('./components/Post.vue'));
+Vue.component('user-review',require('./components/Review.vue'));
