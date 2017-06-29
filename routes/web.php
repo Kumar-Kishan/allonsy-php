@@ -22,8 +22,10 @@ Route::get('/','AppController@welcome');
 Route::post('/preferences', 'AppController@SavePreferences')->middleware('auth');
 Route::get('/setPreferences', 'AppController@SetPreferences')->middleware('auth');
 
+
 Route::get('/feed','AppController@FeedPage')->middleware('auth');
 Route::get('/company','AppController@CompanyPage');
+Route::get('/userprofile','AppController@UserPage')->middleware('auth');
 
 Route::post('/post', 'AppController@MakePost')->middleware('auth');
 

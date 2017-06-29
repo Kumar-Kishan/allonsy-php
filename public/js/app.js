@@ -28553,8 +28553,30 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
     data: function data() {
         return {
             "suggestions": [{ "place": "Bab Bazar", "distance": "4 km from you" }, { "place": "Bab Bazar", "distance": "4 km from you" }, { "place": "Bab Bazar", "distance": "4 km from you" }, { "place": "Bab Bazar", "distance": "4 km from you" }, { "place": "Bab Bazar", "distance": "4 km from you" }, { "place": "Bab Bazar", "distance": "4 km from you" }, { "place": "Bab Bazar", "distance": "4 km from you" }, { "place": "Bab Bazar", "distance": "4 km from you" }]
-
         };
+    },
+    created: function created() {
+        // window.addEventListener("scroll", function(){
+        //     var cover = document.getElementById('suggestionbox');
+        //     var visibleHeight = cover.offsetHeight;
+        //     var pixelScrolled = cover.scrollTop; 
+        //     var y = visibleHeight + pixelScrolled;
+
+        //     console.log(cover.offsetHeight+ ""+cover.scrollTop );
+
+
+        //     console.log(y + " " + pixelScrolled);
+
+        //     if( y == cover.scrollHeight)  
+        //     {
+        //         console.log('end');
+        //     }
+
+        //     else {
+        //         console.log('milena');
+        //     }
+        // });
+
     }
 });
 
@@ -31073,7 +31095,7 @@ exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(3)();
-exports.push([module.i, "\n.card-image{    \r\n    display:inline-block;\r\n    position: relative;\n}\n.card-image a{\r\n    margin-top:10px;\r\n    margin-left: 10px;\r\n    position: absolute;\n}\n.img{\r\n    height: 100px;\r\n    width: 100px;\n}\r\n\r\n\r\n", ""]);
+exports.push([module.i, "\n.card-image{    \r\n    display:inline-block;\r\n    position: relative;\n}\n.card-image a{\r\n    margin-top:10px;\r\n    margin-left: 10px;\r\n    position: absolute;\n}\n.img{\r\n    height: 100px;\r\n    width: 100px;\n}\r\n \r\n\r\n", ""]);
 
 /***/ }),
 /* 168 */
@@ -31094,7 +31116,7 @@ exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(3)();
-exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
+exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
 
 /***/ }),
 /* 171 */
@@ -49225,10 +49247,7 @@ if (false) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('div', {
-    staticClass: "card",
-    attrs: {
-      "id": "abc"
-    }
+    staticClass: "card"
   }, [_c('div', {
     staticClass: "card-image"
   }, [_c('a', {
@@ -49362,7 +49381,10 @@ if (false) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('div', {
-    staticClass: "suggestion"
+    staticClass: "suggestion",
+    attrs: {
+      "id": "suggestionbox"
+    }
   }, _vm._l((_vm.suggestions), function(suggest) {
     return _c('suggestion', {
       key: suggest.place,

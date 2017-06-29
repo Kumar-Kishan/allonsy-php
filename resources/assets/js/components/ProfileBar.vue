@@ -1,6 +1,6 @@
 <template lang="html">
    
-    <div class="card" id="abc">
+    <div class="card">
         <div class="card-image">
             <a id="button" href="#" class="btn btn-circular btn-danger" @click="imgupload" style="display:none"><i class="fa fa-photo"></i></a>
 
@@ -81,6 +81,6 @@
     height: 100px;
     width: 100px;
 }
-
+ 
 
 </style>
