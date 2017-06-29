@@ -8,12 +8,12 @@
 @section('content')
 <div class="row">
     
-        <div class="col-sm-3"> 
-            <div class="col-sm-3" data-spy="affix">
+        <div class="col-sm-2"> 
+            <div class="col-sm-2" data-spy="affix">
             <profile-bar :user="user"></profile-bar>
             </div>
         </div>
-
+ 
     <div id="news-feed" class="col-sm-6">
 
             <post-composer></post-composer>
@@ -23,7 +23,7 @@
 
     </div>
 
-     <div class="col-sm-3">
+     <div class="col-sm-4">
             <div class="bs-divider"><i class="fa fa-star"></i> Recommendations <i class="fa fa-star"></i></div>
             <suggestion-box></suggestion-box>
     </div>

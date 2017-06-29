@@ -1,11 +1,11 @@
 <template lang="html">
    
     <div class="card">
-        <div class="card-image">
+        <div class="card-image ">
             <a id="button" href="#" class="btn btn-circular btn-danger" @click="imgupload" style="display:none"><i class="fa fa-photo"></i></a>
 
 
-            <img @mouseover=inFocus @mouseleave=lostFocus id="profileImage" src="images/avatar/big/steve.jpg" />
+            <img class="ui medium circular image" @mouseover=inFocus @mouseleave=lostFocus id="profileImage" src="images/avatar/big/steve.jpg" />
 
         </div>
 
