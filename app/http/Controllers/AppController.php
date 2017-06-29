@@ -67,6 +67,11 @@ class AppController extends Controller
         return view('feed.index');
     }
 
+    public function UserPage()
+    {
+        return view('user.index');
+    }
+
     public function CompanyPage()
     {
         return view('company.index');

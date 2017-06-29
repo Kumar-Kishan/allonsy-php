@@ -74,7 +74,7 @@
         ]) !!};
     </script>
 </head>
-<body>
+<body data-spy="scroll" data-target="#myScrollspy">
 
     <div id="app">
         @include('components.nav')
