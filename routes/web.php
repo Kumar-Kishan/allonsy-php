@@ -32,3 +32,8 @@ Route::post('/profileImage', 'UserController@ChangeProfilePic')->middleware('aut
 Route::get('/user', 'AppController@GetCurrentUser')->middleware('auth');
 
 Route::get('/feeds/{random_number}', 'UserController@UserFeed')->middleware('auth');
+
+
+Route::get('/settings', function(){
+    return 'you will get settings';
+});

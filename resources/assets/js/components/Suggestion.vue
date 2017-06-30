@@ -1,7 +1,11 @@
 <template lang="html">
     <div class="well">
-        <p>{{suggest.place}}</p>
-        {{suggest.distance}}
+        <p>
+            <a :href=suggest.url>
+                {{suggest.name}}
+            </a>
+        </p>
+        {{suggest.string}}
     </div>
 </template>
 

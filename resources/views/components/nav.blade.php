@@ -13,12 +13,12 @@
 
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-2">
       <ul class="nav navbar-nav navbar-right">
-        <!--<li class="active"><a href="javascript:;">Link <span class="sr-only">(current)</span></a></li>
-        <li><a href="javascript:;">Link</a></li>-->
+        <li><a href="{{url('user')}}">User Profile </a></li>
+        <li><a href="{{url('/company')}}">Company</a></li>
         <li class="dropdown">
           <a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><span class="caret"></span></a>
           <ul class="dropdown-menu" role="menu">
-            <li><a href="javascript:;">Settings</a></li>
+            <li><a href="{{url('/settings')}}">Settings</a></li>
             <li><a href="javascript:;">Create a page</a></li>
             <li class="divider"></li>
             <li><a href="javascript:;">Logout</a></li>

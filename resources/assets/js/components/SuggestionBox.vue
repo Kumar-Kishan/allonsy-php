@@ -1,6 +1,6 @@
 <template lang="html">
     <div class="suggestion">
-        <suggestion v-for="suggest in suggestions" :key="suggest.place" :suggest="suggest" ></suggestion>
+        <suggestion v-for="suggest in suggestions" :key="suggest.name" :suggest="suggest" ></suggestion>
 
     </div>
 </template>
@@ -11,14 +11,14 @@
          data() {
              return {
                  "suggestions":  [
-    {"place":"Bab Bazar","distance": "4 km from you"},
-    {"place":"Bab Bazar","distance": "4 km from you"},
-    {"place":"Bab Bazar","distance": "4 km from you"},
-    {"place":"Bab Bazar","distance": "4 km from you"},
-    {"place":"Bab Bazar","distance": "4 km from you"},
-    {"place":"Bab Bazar","distance": "4 km from you"},
-    {"place":"Bab Bazar","distance": "4 km from you"},
-    {"place":"Bab Bazar","distance": "4 km from you"},   
+    {"name":"Bab Bazar","string": "4 km from you","url":"https:\/\/google.com"},
+    {"name":"Bab Bazar","string": "4 km from you","url":"https:\/\/google.com"},
+    {"name":"Bab Bazar","string": "4 km from you","url":"https:\/\/google.com"},
+    {"name":"Bab Bazar","string": "4 km from you","url":"https:\/\/google.com"},
+    {"name":"Bab Bazar","string": "4 km from you","url":"https:\/\/google.com"},
+    {"name":"Bab Bazar","string": "4 km from you","url":"https:\/\/google.com"},
+    {"name":"Bab Bazar","string": "4 km from you","url":"https:\/\/google.com"},
+    {"name":"Bab Bazar","string": "4 km from you","url":"https:\/\/google.com"},   
 ]
                 
                 
