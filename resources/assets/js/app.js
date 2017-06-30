@@ -24,4 +24,5 @@ Vue.component('suggestion',require('./components/Suggestion.vue'));
 Vue.component('news-feed',require('./components/NewsFeed.vue'));
 Vue.component('post',require('./components/Post.vue'));
 Vue.component('review',require('./components/Review.vue'));
+Vue.component('company-cover',require('./components/CompanyCover.vue'));
 Vue.component('star-rating', require('./components/StarRating.vue'));
