@@ -2,7 +2,7 @@
     
     <div class="card">
         <div class="card-content">
-            <div class="pull-right">Post</div><img class="card-avatar card-image" src="images/avatar/big/steve.jpg"> Steve</div>
+            <div class="pull-right">Post</div><img class="card-avatar card-image" src="images/avatar/big/steve.jpg"> {{story.user.name }}</div>
         
             <div class="card-image">
                 <img :src=imageSrc>
@@ -41,7 +41,6 @@
             imageSrc:  function(){
                 return 'images/'+  this.story.post.media.path;
             }
-
         }
     }
 </script>

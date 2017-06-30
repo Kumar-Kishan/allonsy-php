@@ -10,6 +10,8 @@ window._ = require('lodash');
 window.$ = window.jQuery = require('jquery');
 window.moment = require('moment');
 
+
+
 require('bootstrap-sass');
 
 /**
@@ -19,6 +21,7 @@ require('bootstrap-sass');
  */
 
 window.Vue = require('vue');
+
 
 /**
  * We'll load the axios HTTP library which allows us to easily issue requests

@@ -1,22 +1,22 @@
 <template lang="html">
-   
-    <div class="card" id="abc">
-        <div class="card-image">
-            <a id="button" href="#" class="btn btn-circular btn-danger" @click="imgupload" style="display:none"><i class="fa fa-photo"></i></a>
+   <div class="col-sm-12" data-spy="affix">
+        <div class="card">
+            <div class="card-image ">
+                <a id="button" href="#" class="btn btn-circular btn-danger" @click="imgupload" style="display:none"><i class="fa fa-photo"></i></a>
 
 
-            <img @mouseover=inFocus @mouseleave=lostFocus id="profileImage" src="images/avatar/big/steve.jpg" />
+                <img class="ui medium circular image" @mouseover=inFocus @mouseleave=lostFocus id="profileImage" src="images/avatar/big/steve.jpg" />
+
+            </div>
+
+            <div class="card-content">
+                <div class="text-center">
+                <a class="card-header">{{user.name}}</a>
+                </div>
+            </div>            
 
         </div>
-
-        <div class="card-content">
-            <div class="text-center">
-            <a class="card-header">{{user.name}}</a>
-            </div>
-        </div>            
-
-    </div>
-        
+    </div>   
 </template>
 
 
@@ -27,7 +27,7 @@
                 
             }
         },
-        props :['user'],
+        props :['userId'],
          methods: {
             inFocus: function(event){
                 $('#button').show();
@@ -64,7 +64,16 @@
             } 
     
         },
-        props:['user']
+        props:['user'],
+        created: function(){
+             //$('#profileImage').attr('src','/userimages/' + this.user.profile_image.path);
+             var instance = this;
+             console.log(this.user);
+             axios.get('/media/'+ instance.user.media_id).then(function(response){
+                 $('#profileImage').attr('src','/userimages/' + response.data.path);
+             });
+        
+        }
     }
 </script>
 <style lang="css">
@@ -81,6 +90,6 @@
     height: 100px;
     width: 100px;
 }
-
+ 
 
 </style>

@@ -50,6 +50,9 @@ class UserController extends Controller
         {
             if($item->type === 'posts' ) $item->post->media;
             else $item->review->media;
+
+
+            $item->user->profileImage;
         }        
         return $story;
     }

@@ -24,4 +24,8 @@ Vue.component('suggestion',require('./components/Suggestion.vue'));
 Vue.component('news-feed',require('./components/NewsFeed.vue'));
 Vue.component('post',require('./components/Post.vue'));
 Vue.component('review',require('./components/Review.vue'));
+<<<<<<< HEAD
 Vue.component('company-cover',require('./components/CompanyCover.vue'));
+=======
+Vue.component('star-rating', require('./components/StarRating.vue'));
+>>>>>>> d3281b1cb00596b64932d2e4085f8d2fb605f0ee
