@@ -25,10 +25,10 @@
                 for(var i=1;i<6;i++){
                     if(numberOfStars < i) {
                         this.drawStar(context,i,false);
-                        console.log(i + 'Not Colored');
+                        //console.log(i + 'Not Colored');
                     }else{
                         this.drawStar(context,i,true);
-                        console.log(i + 'Colored');
+                        //console.log(i + 'Colored');
                     }                
                 }
             },
