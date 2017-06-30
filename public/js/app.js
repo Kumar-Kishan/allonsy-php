@@ -28486,7 +28486,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony default export */ __webpack_exports__["default"] = ({
     data: function data() {
         return {
-            rating_value: 0
+            rating_value: 2
         };
     },
     computed: {
@@ -28524,6 +28524,64 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+<<<<<<< HEAD
+=======
+
+/* harmony default export */ __webpack_exports__["default"] = ({
+    data: function data() {
+        return {
+            selectedRating: 0
+        };
+    },
+
+    props: ['rating'],
+    created: function created() {
+        this.selectedRating = this.rating;
+    },
+    mounted: function mounted() {
+        this.drawStars(this.rating);
+    },
+    methods: {
+        drawStars: function drawStars(numberOfStars) {
+            var context = this.$refs.canvas.getContext('2d');
+            for (var i = 1; i < 6; i++) {
+                if (numberOfStars < i) {
+                    this.drawStar(context, i, false);
+                    console.log(i + 'Not Colored');
+                } else {
+                    this.drawStar(context, i, true);
+                    console.log(i + 'Colored');
+                }
+            }
+        },
+        drawStar: function drawStar(context, i, selected) {
+            var offset = (i - 1) * 40;
+            context.arc(offset + 20, 25, 10, 0, 2 * Math.PI, false);
+
+            if (selected) {
+                context.fillStyle = 'green';
+            } else {
+                context.fillStyle = 'white';
+            }
+            context.fill();
+        }
+    }
+});
+
+/***/ }),
+/* 159 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+//
+//
+//
+//
+//
+//
+//
+>>>>>>> 83285a42e340a6c1b2ce64681d8284218fbaa8a5
 //
 
 /* harmony default export */ __webpack_exports__["default"] = ({
@@ -31092,7 +31150,18 @@ exports = module.exports = __webpack_require__(3)();
 exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
 
 /***/ }),
+<<<<<<< HEAD
 /* 167 */
+=======
+/* 168 */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(3)();
+exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
+
+/***/ }),
+/* 169 */
+>>>>>>> 83285a42e340a6c1b2ce64681d8284218fbaa8a5
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(3)();
@@ -49243,7 +49312,36 @@ if (false) {
 }
 
 /***/ }),
+<<<<<<< HEAD
 /* 191 */
+=======
+/* 194 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', {
+    staticClass: "star-rating"
+  }, [_c('canvas', {
+    ref: "canvas",
+    staticClass: "myCanvas",
+    attrs: {
+      "id": "star-canvas",
+      "width": "200px",
+      "height": "50px"
+    }
+  })])
+},staticRenderFns: []}
+module.exports.render._withStripped = true
+if (false) {
+  module.hot.accept()
+  if (module.hot.data) {
+     require("vue-hot-reload-api").rerender("data-v-30455482", module.exports)
+  }
+}
+
+/***/ }),
+/* 195 */
+>>>>>>> 83285a42e340a6c1b2ce64681d8284218fbaa8a5
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -49447,16 +49545,18 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     attrs: {
       "src": _vm.imageSrc
     }
-  })]), _vm._v(" "), _vm._m(0), _vm._v(" "), _vm._m(1)])
-},staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', {
+  })]), _vm._v(" "), _c('div', {
     staticClass: "card-meta"
   }, [_c('span', {
     staticClass: "pull-right"
-  }), _vm._v(" "), _c('i', {
+  }, [_c('star-rating', {
+    attrs: {
+      "rating": _vm.rating_value
+    }
+  })], 1), _vm._v(" "), _c('i', {
     staticClass: "fa fa-comment"
-  }), _vm._v(" 18 comments\n        ")])
-},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  }), _vm._v(" 18 comments\n        ")]), _vm._v(" "), _vm._m(0)])
+},staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('div', {
     staticClass: "card-extra card-content"
   }, [_c('div', {

@@ -15,7 +15,7 @@
             
           <div class="card-meta">
             <span class="pull-right">
-                
+                <star-rating :rating=rating_value></star-rating>
             </span>
 
               <i class="fa fa-comment"></i> 18 comments
@@ -39,7 +39,7 @@
     export default{
          data() {
             return {
-                rating_value : 0
+                rating_value : 2
             }
         },computed: {
             imageSrc:  function(){
