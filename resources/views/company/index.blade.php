@@ -5,7 +5,7 @@
 @endsection
 
 @section('content')
-<<<<<<< HEAD
+    
     <div class="row">
         <div class="col-sm-6">
 
@@ -65,7 +65,4 @@
             });
     });
 </script>
-=======
-    
->>>>>>> d3281b1cb00596b64932d2e4085f8d2fb605f0ee
 @endsection

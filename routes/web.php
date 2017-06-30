@@ -35,12 +35,12 @@ Route::get('/user', 'AppController@GetCurrentUser')->middleware('auth');
 
 Route::get('/feeds/{random_number}', 'UserController@UserFeed')->middleware('auth');
 
-<<<<<<< HEAD
 
 Route::get('/settings', function(){
     return 'you will get settings';
-=======
+});
 Route::get('/media/{media_id}', function($id){
     return App\Media::find($id);
->>>>>>> d3281b1cb00596b64932d2e4085f8d2fb605f0ee
 });
+
+Route::get('/company/create','AppController@CreateCompany')->middleware('auth');

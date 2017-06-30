@@ -69,6 +69,7 @@
              //$('#profileImage').attr('src','/userimages/' + this.user.profile_image.path);
              var instance = this;
              console.log(this.user);
+             if(instance.user.media_id != null)
              axios.get('/media/'+ instance.user.media_id).then(function(response){
                  $('#profileImage').attr('src','/userimages/' + response.data.path);
              });
