@@ -26,3 +26,5 @@ Vue.component('post',require('./components/Post.vue'));
 Vue.component('review',require('./components/Review.vue'));
 Vue.component('company-cover',require('./components/CompanyCover.vue'));
 Vue.component('star-rating', require('./components/StarRating.vue'));
+Vue.component('gallery', require('./components/Gallery.vue'));
+Vue.component('picture', require('./components/Picture.vue'));

@@ -22,7 +22,7 @@
     </div>
 
     <div class="col-sm-3">
-          
+          <gallery></gallery>
     </div>
     
 @endsection
