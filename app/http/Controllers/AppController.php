@@ -7,6 +7,7 @@ use App\UserAttribute;
 use App\User;
 use Auth;
 use App\Media;
+use App\Company;
 
 class AppController extends Controller
 {
@@ -74,7 +75,11 @@ class AppController extends Controller
 
     public function CompanyPage()
     {
-        return view('company.index');
+
+        $company = Company::find(1);
+        $isAdmin  = true;
+
+        return view('company.index',compact('company','isAdmin'));
     }
     public function MakePost(Request $request)
     {
@@ -90,5 +95,11 @@ class AppController extends Controller
         return $user;
 
 
+    }
+
+
+    public function CreateCompany()
+    {
+        return view('company.form');
     }
 }

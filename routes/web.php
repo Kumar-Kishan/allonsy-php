@@ -34,3 +34,15 @@ Route::post('/profileImage', 'UserController@ChangeProfilePic')->middleware('aut
 Route::get('/user', 'AppController@GetCurrentUser')->middleware('auth');
 
 Route::get('/feeds/{random_number}', 'UserController@UserFeed')->middleware('auth');
+
+Route::get('post/{id}/islikedbyme', 'UserController@isLikedByMe');
+Route::post('post/like', 'UserController@like');
+
+Route::get('/settings', function(){
+    return 'you will get settings';
+});
+Route::get('/media/{media_id}', function($id){
+    return App\Media::find($id);
+});
+
+Route::get('/company/create','AppController@CreateCompany')->middleware('auth');

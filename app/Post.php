@@ -12,6 +12,11 @@ class Post extends Model
         'text','fistbump','story_id','media_id',
     ];
 
+    public function fistbump()
+    {
+        return $this->belongsToMany('App\User');
+    }
+
 
     public function media()
     {

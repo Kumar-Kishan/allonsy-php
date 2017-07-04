@@ -23,27 +23,7 @@
             }
         
         }, created: function(){
-            // window.addEventListener("scroll", function(){
-            //     var cover = document.getElementById('suggestionbox');
-            //     var visibleHeight = cover.offsetHeight;
-            //     var pixelScrolled = cover.scrollTop; 
-            //     var y = visibleHeight + pixelScrolled;
-                
-            //     console.log(cover.offsetHeight+ ""+cover.scrollTop );
-                
-
-
-            //     console.log(y + " " + pixelScrolled);
-
-            //     if( y == cover.scrollHeight)  
-            //     {
-            //         console.log('end');
-            //     }
-
-            //     else {
-            //         console.log('milena');
-            //     }
-            // });
+           
             
     }
 }

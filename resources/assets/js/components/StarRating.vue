@@ -29,12 +29,20 @@
                 for(var i=1;i<6;i++){
                     var offset = (i - 1) * 40;                    
                     if(numberOfStars < i) {
+<<<<<<< HEAD
                         this.drawStar(context,offset + 20,25,6,7,12,false);
                         console.log(i + 'Not Colored');
                     }else{
                         this.drawStar(context,offset + 20,25,6,7,12,true);
                         //this.drawStar(context,i,true);
                         console.log(i + 'Colored');
+=======
+                        this.drawStar(context,i,false);
+                        //console.log(i + 'Not Colored');
+                    }else{
+                        this.drawStar(context,i,true);
+                        //console.log(i + 'Colored');
+>>>>>>> 39353ea6baf641ccc896260e96a48386362a66fb
                     }                
                 }
             },
