@@ -1,8 +1,10 @@
 <template lang="html">
     
     <div class="card">
-        <div class="card-content">
-            <div class="pull-right">Review</div><img class="card-avatar card-image" src="images/avatar/big/steve.jpg">{{story.user.name}}</div>
+            <div class="card-content">
+                <div class="pull-right">Review</div>
+                <img class="card-avatar card-image" :src=profileImage>{{story.user.name}}
+            </div>
         
             <div class="card-description">
                     <p class="text-danger">{{reviewText}}</p>
@@ -17,9 +19,7 @@
             <span class="pull-right">
                 <star-rating :rating=rating_value></star-rating>
             </span>
-
-              <i class="fa fa-comment"></i> 18 comments
-            </div>
+          </div>
             <div class="card-extra card-content">
                 <div class="input-group">
                     <input class="form-control" type="text" placeholder="Add comment...">
@@ -28,7 +28,6 @@
                         </div>
                 </div>
             </div>
-        </div>
     </div>
 
 
@@ -50,7 +49,11 @@
             },
             ratingId: function(){
                 return 'rating' + this.story.id;
+            },
+            profileImage: function(){
+                return '/userimages/'+ this.story.user.profile_image.path;
             }
+            
         },
         props: ['story'],
         created: function(){
@@ -59,7 +62,15 @@
             // $('#' + instance.ratingId).on('rating.hoverleave', function(event, target) {
             //     console.log(event);
             //     console.log($('#' + instance.ratingId).val());
-            // });
+            //
+            
+            //  if(instance.user.media_id != null)
+            //  axios.get('/media/'+ instance.user.media_id).then(function(response){
+            //      $('#profileImage').attr('src','/userimages/' + response.data.path);
+            //  }); 
+
+
+           
         }
     }
 </script>

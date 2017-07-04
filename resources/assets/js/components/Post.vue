@@ -2,10 +2,22 @@
     
     <div class="card">
         <div class="card-content">
-            <div class="pull-right">Post</div><img class="card-avatar card-image" src="images/avatar/big/steve.jpg"> {{story.user.name }}</div>
+            <div class="pull-right">Post</div>
+            <img class="card-avatar card-image" :src=profileImage> {{story.user.name }}</div>
+
+             <div class="card-description">
+                    <p class="text-danger">{{postText}}</p>
+            </div>
+
         
             <div class="card-image">
                 <img :src=imageSrc>
+            </div>
+
+            <div class="card-meta">
+                <span class="pull-right">
+                    <star-rating :rating=rating_value></star-rating>
+                </span>
             </div>
 
             <div class="card-content">
@@ -40,7 +52,16 @@
         },computed: {
             imageSrc:  function(){
                 return 'images/'+  this.story.post.media.path;
-            }
+            },
+            profileImage: function(){
+                return '/userimages/'+ this.story.user.profile_image.path;
+            },
+            postText : function(){
+                return this.story.post.text;
+            },
+            fistbumpId: function(){
+                return 'fistbump' + this.story.id;
+            },
         }
     }
 </script>

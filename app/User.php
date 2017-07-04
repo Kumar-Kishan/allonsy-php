@@ -46,6 +46,11 @@ class User extends Authenticatable
         return $this->hasMany('App\RateReview');
     }
 
+    public function fistbump()
+    {
+        return $this->belongsToMany('App\Post');
+    }
+
 
     public function attributes()
     {
