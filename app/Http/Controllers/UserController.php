@@ -42,9 +42,9 @@ class UserController extends Controller
     public function UserFeed($random)
     {
         //$stories = Story::with('post')->find(1);
-        $story = Story::orderBy(DB::raw('RAND('.$random.')'))
+        $stories = Story::orderBy(DB::raw('RAND('.$random.')'))
                 ->paginate(15);
-        $items = $story->items();
+        $items = $stories->items();
 
         foreach($items as $item)
         {
@@ -54,6 +54,6 @@ class UserController extends Controller
 
             $item->user->profileImage;
         }        
-        return $story;
+        return $stories;
     }
 }
