@@ -2,13 +2,15 @@
 
 @section('styles')
     <style>
-    .rowstyle{
-        padding-left: 20px; 
-        padding-right: 20px;
-    }
-    .buttonrow{
-        padding-right: 40px;
-    }
+        .rowstyle{
+            padding-left: 20px; 
+            padding-right: 20px;
+        }
+        .buttonrow{
+            padding-right: 40px;
+        }
+        
+
     </style>
 @endsection
 

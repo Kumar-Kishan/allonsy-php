@@ -61,7 +61,23 @@
         font-size: 18px;
         line-height: 22px;
         height: 50px;
+        background: url(../images/asdf.png);
+
     }
+
+    .navbar-nav{
+        background: url(../images/asdf.png);
+    }
+
+    .navbar-default .navbar-collapse, .navbar-default .navbar-form{
+        background: url(../images/asdf.png);
+    }
+    
+    .navbar-default .navbar-nav > li > a {
+        color: #f5f5f5;
+    }
+
+
 
     .form-control {
     padding: 6px 50px;
