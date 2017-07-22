@@ -1,6 +1,6 @@
 <!-- Header -->
 
-<nav class="navbar navbar-inverse navbar-fixed-top" >
+<nav class="navbar" >
    
         <a href="{{url('feed')}}">
             <img src="images/allonsyyy.png" class="img-responsive navbar-brand"/>
