@@ -28361,10 +28361,6 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
-//
-//
-//
-//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
     data: function data() {
@@ -28675,20 +28671,12 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
             for (var i = 1; i < 6; i++) {
                 var offset = (i - 1) * 40;
                 if (numberOfStars < i) {
-<<<<<<< HEAD
                     this.drawStar(context, offset + 20, 25, 6, 7, 12, false);
                     console.log(i + 'Not Colored');
                 } else {
                     this.drawStar(context, offset + 20, 25, 6, 7, 12, true);
                     //this.drawStar(context,i,true);
                     console.log(i + 'Colored');
-=======
-                    this.drawStar(context, i, false);
-                    //console.log(i + 'Not Colored');
-                } else {
-                    this.drawStar(context, i, true);
-                    //console.log(i + 'Colored');
->>>>>>> 39353ea6baf641ccc896260e96a48386362a66fb
                 }
             }
         },
@@ -31305,19 +31293,14 @@ exports.push([module.i, "\n.reveal-dim > .item > img {\r\n  position: absolute;\
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(2)();
-exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
+exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
 
 /***/ }),
 /* 172 */
 /***/ (function(module, exports, __webpack_require__) {
 
-<<<<<<< HEAD
-exports = module.exports = __webpack_require__(3)();
-exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
-=======
 exports = module.exports = __webpack_require__(2)();
-exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
->>>>>>> 39353ea6baf641ccc896260e96a48386362a66fb
+exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
 
 /***/ }),
 /* 173 */
@@ -49639,15 +49622,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     attrs: {
       "src": _vm.imageSrc
     }
-  })]), _vm._v(" "), _c('div', {
-    staticClass: "card-meta"
-  }, [_c('span', {
-    staticClass: "pull-right"
-  }, [_c('star-rating', {
-    attrs: {
-      "rating": _vm.rating_value
-    }
-  })], 1)]), _vm._v(" "), _vm._m(0), _vm._v(" "), _vm._m(1)])
+  })]), _vm._v(" "), _vm._m(0), _vm._v(" "), _vm._m(1)])
 },staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('div', {
     staticClass: "card-content"

@@ -14,11 +14,7 @@
                 <img :src=imageSrc>
             </div>
 
-            <div class="card-meta">
-                <span class="pull-right">
-                    <star-rating :rating=rating_value></star-rating>
-                </span>
-            </div>
+          
 
             <div class="card-content">
                 <span class="pull-right"><i class="fa fa-heart"></i> 17 likes </span>

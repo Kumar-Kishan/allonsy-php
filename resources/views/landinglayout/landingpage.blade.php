@@ -1,62 +1,57 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
+<!--
+	Landed by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
 <html>
-<head>
-  <title>Allons-y!!(Lets go!)</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  <style>
+	<head>
+		<title>Landed by HTML5 UP</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<link href="{{ url('css/smt-bootstrap.css')}}" rel="stylesheet">
 
-  body {
-      position: relative; 
-  }
- 
-  .carousel {
-  height: 550px;
-}
-  .affix {
-      top:0;
-      width: 100%;
-      z-index: 9999 !important;
-  }
-  .navbar {
-      margin-bottom: 0px;      
-  }
+		<!--[if lte IE 8]><script src="url('js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="{{ url('css/main.css')}}" />
+		<!--[if lte IE 9]><link rel="stylesheet" href="url('css/ie9.css" /><![endif]-->
+		<!--[if lte IE 8]><link rel="stylesheet" href="url('css/ie8.css" /><![endif]-->
+	</head>
+	<body class="landing">
+		<div id="page-wrapper">
 
-  .affix ~ .container-fluid {
-     position: relative;
-     top: 550px;
-  }
+			<!-- Header -->
+			@include('landinglayout.nav')
 
-  
-  /* Declare heights because of positioning of img element */
-.carousel .item {
-  height: 550px;
-  background-color: #777;
-}
-.carousel-inner > .item > img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  min-width: 100%;
-  height: 550px;
-}
-.content
-{
-    margin-top: 40px;
-    margin-left: 40px;
-}
-  </style>
-</head>
+			<!-- Banner -->
+			@include('landinglayout.content')
 
-<body data-spy="scroll" data-target=".navbar" data-offset="500">
-@include('landinglayout.carousel')
-@include('landinglayout.nav')
-<div class="content">
-    @include('landinglayout.content')
-</div>
+			<!-- Footer -->
+				<footer id="footer">
+					<ul class="icons">
+						<li><a href="#" class="icon alt fa-twitter"><span class="label">Twitter</span></a></li>
+						<li><a href="#" class="icon alt fa-facebook"><span class="label">Facebook</span></a></li>
+						<li><a href="#" class="icon alt fa-linkedin"><span class="label">LinkedIn</span></a></li>
+						<li><a href="#" class="icon alt fa-instagram"><span class="label">Instagram</span></a></li>
+						<li><a href="#" class="icon alt fa-github"><span class="label">GitHub</span></a></li>
+						<li><a href="#" class="icon alt fa-envelope"><span class="label">Email</span></a></li>
+					</ul>
+					<ul class="copyright">
+						<li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+					</ul>
+				</footer>
 
-</body>
+		</div>
+
+		<!-- Scripts -->
+			<script src="{{url('js/jquery.min.js')}}"></script>
+			<script src="{{url('js/jquery.scrolly.min.js')}}"></script>
+			<script src="{{url('js/jquery.dropotron.min.js')}}"></script>
+			<script src="{{url('js/jquery.scrollex.min.js')}}"></script>
+			<script src="{{url('js/skel.min.js')}}"></script>
+			<script src="{{url('js/util.js')}}"></script>
+			<!--[if lte IE 8]><script src="url('js/ie/respond.min.js"></script><![endif]-->
+			<script src="{{url('js/main.js')}}"></script>
+
+	</body>
 </html>

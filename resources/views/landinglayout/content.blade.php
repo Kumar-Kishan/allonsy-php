@@ -1,53 +1,107 @@
-<!-- Three columns of text below the carousel -->
-      <div class="row">
-        <div class="col-lg-4">
-          <img class="img-circle" src="{{url('images/user.jpg')}}"alt="Generic placeholder image" width="140" height="140">
-          <h2>User Profile</h2>
-          <p>Set up your profile and preferences and let the journey begin.</p>
-          
-        </div><!-- /.col-lg-4 -->
-        <div class="col-lg-4">
-          <img class="img-circle" src="{{url('images/review.jpg')}}" alt="Generic placeholder image" width="140" height="140">
-          <h2>Review</h2>
-          <p>Give reviews about different places and let the world know about the amazing wonders of planet Earth.</p>
-         
-        </div><!-- /.col-lg-4 -->
-        <div class="col-lg-4">
-          <img class="img-circle" src="{{url('images/recommendation.jpg')}}" alt="Generic placeholder image" width="140" height="140">
-          <h2>Recommendation</h2>
-          <p>Don't think too much about where to go. Set up your preferences and we'll recommend you perfect places as per your interests.</p>
-         
-        </div><!-- /.col-lg-4 -->
-      </div><!-- /.row -->
-
-
-      <!-- START THE FEATURETTES -->
-
-      <hr class="featurette-divider">
-
-      <div class="row featurette">
-        <div class="col-md-7">
-          <h2 class="featurette-heading">Find new places. <span class="text-muted">See the world.</span></h2>
-          <p class="lead">Check reviews by other users and find exciting new places to travel. Travelling to new places is never a bad idea.</p>
-        </div>
-        <div class="col-md-5">
-          <img class="featurette-image img-responsive center-block" src="{{url('images/earth.jpg')}}" alt="Generic placeholder image">
-        </div>
-      </div>
-
-      <hr class="featurette-divider">
-
-      <div class="row featurette">
-        <div class="col-md-7 col-md-push-5">
-          <h2 class="featurette-heading">Register your company. <span class="text-muted">Let your business grow.</span></h2>
-          <p class="lead">Promote your company by advertising and letting people know just how much more fun travelling can be with your help.</p>
-        </div>
-        <div class="col-md-5 col-md-pull-7">
-          <img class="featurette-image img-responsive center-block" src="{{url('images/business.jpg')}}" alt="Generic placeholder image">
-        </div>
-      </div>
-
-      <hr class="featurette-divider">
-
-      <!-- /END THE FEATURETTES -->
+  <!-- One -->
+    <section id="one" class="spotlight style1 bottom">
       
+      <span class="image fit main"><img src="images/trek.jpg" alt="" /></span>
+
+      <div class="content">
+        <div class="container">
+          <div class="row">
+            <div class="4u 12u$(medium)">
+              <header>
+                <h2>Travel</h2>
+              </header>
+            </div>
+            <div class="4u 12u$(medium)">
+                <header>
+                Travelling is the best way of having new experiences. It has become an important part of life in recent times and also a hobby for many people.
+                </header>
+            </div>
+
+            <div class="4u 12u$(medium)">
+              <header>
+                Imagine climbing a mountain, going for a walk on the beach, going to a museum or going to a national park. Travelling is the best way of gaining new perspective, new point of view about life and enlighten ourselves about different cultures
+              </header>
+            </div>
+            
+            
+          </div>
+        </div>
+      </div>
+      <a href="#two" class="goto-next scrolly">Next</a>
+    </section>
+
+  <!-- Two -->
+    <section id="two" class="spotlight style2 right">
+      <span class="image fit main"><img src="images/chill.jpg" alt="" /></span>
+      <div class="content">
+        <header>
+        <h2>Share</h2>
+        <p>Let people know about your travel stories.<br>Review places you have been.<br>Know the review about different places before you visit!</p>
+        </header>
+        
+      </div>
+      <a href="#three" class="goto-next scrolly">Next</a>
+    </section>
+
+			<!-- Three -->
+				<section id="three" class="spotlight style3 left">
+					<span class="image fit main bottom"><img src="images/pilgrimage.JPG" alt="" /></span>
+					<div class="content">
+						<header>
+							<h2>Explore</h2>
+              <p>Find about new destinations to visit.There may be some nearby picturesque places you may not even be aware of...</p>
+						</header>
+					</div>
+					<a href="#four" class="goto-next scrolly">Next</a>
+				</section>
+
+			<!-- Four -->
+				<section id="four" class="wrapper style1 special fade-up">
+					<div class="container">
+						<header class="major">
+						<img src="images/allonsyyy.png" class="img-responsive"/>
+            <h2>Let's Go!!</h2>
+						</header>
+						<div class="box alt">
+							<div class="row uniform">
+								<section class="4u 6u(medium) 12u$(xsmall)">
+									<span class="icon alt major fa-area-chart"></span>
+									<h3>Ipsum sed commodo</h3>
+									<p>Feugiat accumsan lorem eu ac lorem amet accumsan donec. Blandit orci porttitor.</p>
+								</section>
+								<section class="4u 6u$(medium) 12u$(xsmall)">
+									<span class="icon alt major fa-comment"></span>
+									<h3>Eleifend lorem ornare</h3>
+									<p>Feugiat accumsan lorem eu ac lorem amet accumsan donec. Blandit orci porttitor.</p>
+								</section>
+								<section class="4u$ 6u(medium) 12u$(xsmall)">
+									<span class="icon alt major fa-flask"></span>
+									<h3>Cubilia cep lobortis</h3>
+									<p>Feugiat accumsan lorem eu ac lorem amet accumsan donec. Blandit orci porttitor.</p>
+								</section>
+								<section class="4u 6u$(medium) 12u$(xsmall)">
+									<span class="icon alt major fa-paper-plane"></span>
+									<h3>Non semper interdum</h3>
+									<p>Feugiat accumsan lorem eu ac lorem amet accumsan donec. Blandit orci porttitor.</p>
+								</section>
+								<section class="4u 6u(medium) 12u$(xsmall)">
+									<span class="icon alt major fa-file"></span>
+									<h3>Odio laoreet accumsan</h3>
+									<p>Feugiat accumsan lorem eu ac lorem amet accumsan donec. Blandit orci porttitor.</p>
+								</section>
+								<section class="4u$ 6u$(medium) 12u$(xsmall)">
+									<span class="icon alt major fa-lock"></span>
+									<h3>Massa arcu accumsan</h3>
+									<p>Feugiat accumsan lorem eu ac lorem amet accumsan donec. Blandit orci porttitor.</p>
+								</section>
+							</div>
+						</div>
+						<footer class="major">
+							<ul class="actions">
+								<li><a href="#" class="button">Magna sed feugiat</a></li>
+							</ul>
+						</footer>
+					</div>
+				</section>
+
+			
